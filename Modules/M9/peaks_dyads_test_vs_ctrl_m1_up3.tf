@@ -1,0 +1,208 @@
+AC  dyads_test_vs_ctrl_m1
+XX
+ID  dyads_test_vs_ctrl_m1
+XX
+DE  ahaAAAGCCCAAawh
+P0       a     c     g     t
+1       61    28    33    40
+2       47    41    28    46
+3       97    31    10    24
+4      112    19    13    18
+5      130    10     6    16
+6      137     1    22     2
+7       15     6   136     5
+8        2   152     6     2
+9        8   148     1     5
+10       2   154     1     5
+11     148     6     0     8
+12     127     8     7    20
+13      98    26    10    28
+14      42    30    32    58
+15      47    44    27    44
+XX
+BA  162 sequences
+XX
+BS  ATTAAATCCCAAATC; site_0; 1; 15; 0; p
+BS  AGAAAAGTCCAGAAC; site_1; 1; 15; 0; p
+BS  GGGCAAGCCCAAAGG; site_2; 1; 15; 0; p
+BS  GCCATAGCCCAAGCC; site_3; 1; 15; 0; p
+BS  GTACAAGCCCACTTC; site_4; 1; 15; 0; p
+BS  ATAAAAGCCTCAAGG; site_5; 1; 15; 0; p
+BS  ATGAAAGCCCACAGT; site_6; 1; 15; 0; p
+BS  AAACCAGCCCAAACC; site_7; 1; 15; 0; p
+BS  GATAAGGCCCAAACC; site_8; 1; 15; 0; p
+BS  AGGTTAGCCCAAACG; site_9; 1; 15; 0; p
+BS  TACAGAGCCCAAATA; site_10; 1; 15; 0; p
+BS  TAATAAGCCCAGAGA; site_11; 1; 15; 0; p
+BS  ACAACAACCCAAATA; site_12; 1; 15; 0; p
+BS  ACAACAACCCAAATA; site_13; 1; 15; 0; p
+BS  ATAGAATCCCAAACT; site_14; 1; 15; 0; p
+BS  ACCCAAGCCCAAACT; site_15; 1; 15; 0; p
+BS  GGATAAGCCCATAAA; site_16; 1; 15; 0; p
+BS  AATCAAGCCCAATCT; site_17; 1; 15; 0; p
+BS  AGAATAGCCCACACA; site_18; 1; 15; 0; p
+BS  TTTAAAGCCCAGAAA; site_19; 1; 15; 0; p
+BS  TTAAAGGCCCAACCA; site_20; 1; 15; 0; p
+BS  AATGAAGCCCAACTG; site_21; 1; 15; 0; p
+BS  CAAAAAGCCCATATA; site_22; 1; 15; 0; p
+BS  GCTCAAGCCCAACAT; site_23; 1; 15; 0; p
+BS  ACAACAACCCAAACC; site_24; 1; 15; 0; p
+BS  ACAACAACCCAAACC; site_25; 1; 15; 0; p
+BS  ACAACAACCCAAACC; site_26; 1; 15; 0; p
+BS  GTTGAAGCCCAACTC; site_27; 1; 15; 0; p
+BS  ATATAAGCCCAACTC; site_28; 1; 15; 0; p
+BS  GTAATGGCCCAAAAT; site_29; 1; 15; 0; p
+BS  ACGAAAGCTCAAGCA; site_30; 1; 15; 0; p
+BS  TATTAAGCCCAATGC; site_31; 1; 15; 0; p
+BS  AGGAAAACCCAAAAA; site_32; 1; 15; 0; p
+BS  CGAAAAACCCAACAA; site_33; 1; 15; 0; p
+BS  TCGAAAACCCAATTC; site_34; 1; 15; 0; p
+BS  AAATAAGCCCCAAAT; site_35; 1; 15; 0; p
+BS  CACAAAGCCCACATC; site_36; 1; 15; 0; p
+BS  ATCAAAGCCCAAATT; site_37; 1; 15; 0; p
+BS  GTATAAGCCCTAATG; site_38; 1; 15; 0; p
+BS  CCAAAACCCCAAAAC; site_39; 1; 15; 0; p
+BS  AGAAAAGCCCACTCT; site_40; 1; 15; 0; p
+BS  GAACACGCCCAAATA; site_41; 1; 15; 0; p
+BS  CTAATAGCCCTACCT; site_42; 1; 15; 0; p
+BS  CTAATAGCCCTACCT; site_43; 1; 15; 0; p
+BS  AAAATAGCCCTAGTA; site_44; 1; 15; 0; p
+BS  TAAAAAGCCGAAATC; site_45; 1; 15; 0; p
+BS  ATCAAAGCCAAAACA; site_46; 1; 15; 0; p
+BS  TGAGAAGCCCAACTC; site_47; 1; 15; 0; p
+BS  TCCCAAGCCCAACTC; site_48; 1; 15; 0; p
+BS  ATAAAAGCCAAGACA; site_49; 1; 15; 0; p
+BS  AACAAAGCCCAGCGT; site_50; 1; 15; 0; p
+BS  ATAAAAGCACAACAT; site_51; 1; 15; 0; p
+BS  ATAAAAGCACAACAT; site_52; 1; 15; 0; p
+BS  AGTAAAGCCCAGATC; site_53; 1; 15; 0; p
+BS  CCCAAAGGCCAAAGA; site_54; 1; 15; 0; p
+BS  AACACAGCCCAATGT; site_55; 1; 15; 0; p
+BS  TCACATGCCCAACGT; site_56; 1; 15; 0; p
+BS  ATAAAGGCCCAAATT; site_57; 1; 15; 0; p
+BS  TCCAAAGCCCATTTA; site_58; 1; 15; 0; p
+BS  TCAAAAGCCCAAAGA; site_59; 1; 15; 0; p
+BS  CAAAGAGCCCAAAGC; site_60; 1; 15; 0; p
+BS  CCCAAAGCCCATTAT; site_61; 1; 15; 0; p
+BS  GATAAAGCCCATCGA; site_62; 1; 15; 0; p
+BS  CTCAAAGCCCATCAA; site_63; 1; 15; 0; p
+BS  AACGTAGCCCAAATT; site_64; 1; 15; 0; p
+BS  GATAAAGCCCAAGTA; site_65; 1; 15; 0; p
+BS  GCAAAAGCACAAAGT; site_66; 1; 15; 0; p
+BS  GTAAGAGCCCAAATT; site_67; 1; 15; 0; p
+BS  ATAGAATCCCAAATA; site_68; 1; 15; 0; p
+BS  CAAAAAGCCCCATAA; site_69; 1; 15; 0; p
+BS  ACAATGGCCCAAAGA; site_70; 1; 15; 0; p
+BS  ATCAAGGCCCAAAGG; site_71; 1; 15; 0; p
+BS  ATAAAAGCACATAAA; site_72; 1; 15; 0; p
+BS  TAATAGGCCCAAACT; site_73; 1; 15; 0; p
+BS  AGCAAAGCCCATTTG; site_74; 1; 15; 0; p
+BS  AGCAAAGCCCACTTT; site_75; 1; 15; 0; p
+BS  CCTAAAACCCAAAAT; site_76; 1; 15; 0; p
+BS  ACCAAAACCCAAAAC; site_77; 1; 15; 0; p
+BS  GCCTAAGCCCAATTC; site_78; 1; 15; 0; p
+BS  CAAACGGCCCAAATT; site_79; 1; 15; 0; p
+BS  CAAAAGGCCCATAAC; site_80; 1; 15; 0; p
+BS  CACGAAGCCCAATGC; site_81; 1; 15; 0; p
+BS  GTAGAAGCCCAAGTC; site_82; 1; 15; 0; p
+BS  ACTATAGCCCAATGG; site_83; 1; 15; 0; p
+BS  AAAGAAGCCCATATT; site_84; 1; 15; 0; p
+BS  AAAAGAGCCCAAATA; site_85; 1; 15; 0; p
+BS  GTATAAGCCCATTGA; site_86; 1; 15; 0; p
+BS  AGCAAAGCCCAACCC; site_87; 1; 15; 0; p
+BS  AGCAAAGCCCAACCC; site_88; 1; 15; 0; p
+BS  TTATAAGCCCATAAA; site_89; 1; 15; 0; p
+BS  GAAATAGCTCAAAGT; site_90; 1; 15; 0; p
+BS  TTAATAGCCCTAAAC; site_91; 1; 15; 0; p
+BS  GAAATAACCCAAAGA; site_92; 1; 15; 0; p
+BS  TCAAAAGCCCCACAA; site_93; 1; 15; 0; p
+BS  GAAAAAGCCCATGCA; site_94; 1; 15; 0; p
+BS  TTGCAAGCCCAAGCC; site_95; 1; 15; 0; p
+BS  GCCCAAGCCCAAACC; site_96; 1; 15; 0; p
+BS  TCATCAGCCCAAAAC; site_97; 1; 15; 0; p
+BS  GATGAAGCCCAAGCG; site_98; 1; 15; 0; p
+BS  TTTAAAGCCCATTTA; site_99; 1; 15; 0; p
+BS  TACCAAGCCCAATGG; site_100; 1; 15; 0; p
+BS  GGAAAGGCCCTAATC; site_101; 1; 15; 0; p
+BS  TGAAAATCCCAAATT; site_102; 1; 15; 0; p
+BS  TGAAAAGCCCAACGT; site_103; 1; 15; 0; p
+BS  TAATAGGCCCAAAGG; site_104; 1; 15; 0; p
+BS  CCAAAGGCCCAAAAC; site_105; 1; 15; 0; p
+BS  TTACAAGCCCATATA; site_106; 1; 15; 0; p
+BS  TAATAGGCCCAAAGG; site_107; 1; 15; 0; p
+BS  CCAAAGGCCCAAAAC; site_108; 1; 15; 0; p
+BS  TTACAAGCCCATATA; site_109; 1; 15; 0; p
+BS  TAAAAAGTCTAAATT; site_110; 1; 15; 0; p
+BS  ATATGAGCCCAATAA; site_111; 1; 15; 0; p
+BS  TTTAAAGCTCAATAG; site_112; 1; 15; 0; p
+BS  TAAAAAGGCCAATTA; site_113; 1; 15; 0; p
+BS  TTCAAGGCCCAATAG; site_114; 1; 15; 0; p
+BS  TTCAAGGCCCAATAG; site_115; 1; 15; 0; p
+BS  GAGAAGGCCCAAAAC; site_116; 1; 15; 0; p
+BS  ACTAAACCCCAAATA; site_117; 1; 15; 0; p
+BS  ACTAAACCCCAAATA; site_118; 1; 15; 0; p
+BS  ACAAAAGCACAAAAG; site_119; 1; 15; 0; p
+BS  AGAGAAACCCAAATG; site_120; 1; 15; 0; p
+BS  GGATAAACCCAAATT; site_121; 1; 15; 0; p
+BS  GTAAAAGGCCTAAGC; site_122; 1; 15; 0; p
+BS  AGACCAGCCCAATAG; site_123; 1; 15; 0; p
+BS  GTACTAGCCCAAATT; site_124; 1; 15; 0; p
+BS  TGAAAAGCCTAAATT; site_125; 1; 15; 0; p
+BS  GGAAAAGCCCAAAGG; site_126; 1; 15; 0; p
+BS  GGAAAAGCCCAAAGG; site_127; 1; 15; 0; p
+BS  GACAAGGCCCAACAC; site_128; 1; 15; 0; p
+BS  CCAAAGGCCCAAAGA; site_129; 1; 15; 0; p
+BS  ATCAAAGACCAAAAG; site_130; 1; 15; 0; p
+BS  GATAAAGCTCAATTT; site_131; 1; 15; 0; p
+BS  ATATATGCCCAATTA; site_132; 1; 15; 0; p
+BS  CATAAAGCCTAAGGT; site_133; 1; 15; 0; p
+BS  CTAAAACCCCATAGT; site_134; 1; 15; 0; p
+BS  ATAAGAGCCTAAAAC; site_135; 1; 15; 0; p
+BS  TCCAAATCCCAAATA; site_136; 1; 15; 0; p
+BS  CAAGAAGCGCAAAAA; site_137; 1; 15; 0; p
+BS  AATAAAGCCCATCTT; site_138; 1; 15; 0; p
+BS  TTTAAAACCCAAATG; site_139; 1; 15; 0; p
+BS  GAGTAAGCCCAAACG; site_140; 1; 15; 0; p
+BS  CCACAAGCCCAGAAG; site_141; 1; 15; 0; p
+BS  TAAAAGGCTCAAAAG; site_142; 1; 15; 0; p
+BS  AGTAAAGGCCAAATG; site_143; 1; 15; 0; p
+BS  TCCAAACCCCAAAAG; site_144; 1; 15; 0; p
+BS  CCAAAAGCCCCAACC; site_145; 1; 15; 0; p
+BS  CTAGAAGACCAAAGC; site_146; 1; 15; 0; p
+BS  AAACAAGCCCAACCC; site_147; 1; 15; 0; p
+BS  CCCAAAGCCCATTTA; site_148; 1; 15; 0; p
+BS  AAGAAAGCACAAACT; site_149; 1; 15; 0; p
+BS  TGAAAACCCCAACCC; site_150; 1; 15; 0; p
+BS  CTAATAGCACAATAT; site_151; 1; 15; 0; p
+BS  CAAATGGCCCAAATT; site_152; 1; 15; 0; p
+BS  CGAAAGGGCCAAAGA; site_153; 1; 15; 0; p
+BS  TTAAAAGCACACAAA; site_154; 1; 15; 0; p
+BS  GAAAAAGCCCATATT; site_155; 1; 15; 0; p
+BS  TCAAAAACCCAATTA; site_156; 1; 15; 0; p
+BS  TCACAAGCCCCAATT; site_157; 1; 15; 0; p
+BS  ACAAAAGGCCTAATT; site_158; 1; 15; 0; p
+BS  ACTAAAGCCCAAGAT; site_159; 1; 15; 0; p
+BS  AGAAAAGCCCAACTC; site_160; 1; 15; 0; p
+BS  AGAAAAGCCCACCAC; site_161; 1; 15; 0; p
+CC  program: transfac
+CC  matrix.nb: 6
+CC  accession: dyads_test_vs_ctrl_m1
+CC  AC: dyads_test_vs_ctrl_m1
+CC  id: dyads_test_vs_ctrl_m1
+CC  name: dyads_test_vs_ctrl_m1
+CC  version: 
+CC  name: dyads_test_vs_ctrl_m1
+CC  description: ahaAAAGCCCAAawh
+CC  statistical_basis: 162 sequences
+CC  transfac_consensus: 
+CC  matrix.nb: 6
+CC  sites: 162
+CC  bg_markov_order: 1
+CC  consensus.strict: gcaaaaGCCCAaatc
+CC  consensus.strict.rc: GATTTGGGCTTTTGC
+CC  consensus.IUPAC: rcmaaaGCCCAaakc
+CC  consensus.IUPAC.rc: GMTTTGGGCTTTKGY
+CC  consensus.regexp: [ag]c[ac]aaaGCCCAaa[gt]c
+CC  consensus.regexp.rc: G[AC]TTTGGGCTTT[GT]G[CT]
+XX
+//

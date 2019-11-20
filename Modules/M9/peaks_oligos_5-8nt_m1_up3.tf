@@ -1,0 +1,111 @@
+AC  oligos_5-8nt_m1
+XX
+ID  oligos_5-8nt_m1
+XX
+DE  wwaaAGCCCAAATtttaAAawwyh
+P0       a     c     g     t
+1       19    13     7    17
+2       22    12     6    16
+3       30    12     5     9
+4       36     6     3    11
+5       47     0     9     0
+6        8     1    42     5
+7        0    54     2     0
+8        2    53     1     0
+9        1    48     1     6
+10      50     1     0     5
+11      42     5     1     8
+12      44     3     5     4
+13       8     4     3    41
+14      13     9     4    30
+15       9     5     7    35
+16      11     7     6    32
+17      32     9     4    11
+18      39     4     3    10
+19      43     4     2     7
+20      30     7     6    13
+21      19     5     9    23
+22      28     4     9    15
+23      13    17    12    14
+24      18    16     8    14
+XX
+BA  56 sequences
+XX
+BS  CTATAGCCCATGATTTTAAGTTTA; site_0; 1; 24; 0; p
+BS  AACTAGCCCACATTGCCCAATAGT; site_1; 1; 24; 0; p
+BS  GCCCAGCCCTAATCTCAACAAAGC; site_2; 1; 24; 0; p
+BS  ACAGAGCCCAAATATGAGAAGGCT; site_3; 1; 24; 0; p
+BS  CAACAACCCAAATAATTAAAAACT; site_4; 1; 24; 0; p
+BS  CAACAACCCAAATAATTAAAAACT; site_5; 1; 24; 0; p
+BS  TCCTAGCCCAATTTTTATATTTTC; site_6; 1; 24; 0; p
+BS  TACAAGCACATATTTTATAGTATC; site_7; 1; 24; 0; p
+BS  TATAAGCCCAACTCTAAATTCTCT; site_8; 1; 24; 0; p
+BS  ATAAAGCCCTCACTATAAAATTCT; site_9; 1; 24; 0; p
+BS  ACAAAGCCCACATCGTATCAAAGC; site_10; 1; 24; 0; p
+BS  TCAAAGCCCAAATTCTAACTCCTC; site_11; 1; 24; 0; p
+BS  TGAAATCCAAAATTTGAAAAGAAG; site_12; 1; 24; 0; p
+BS  AAAAAGCCGAAATCCAAAAAAGAA; site_13; 1; 24; 0; p
+BS  CCCAGGCCCACATTTTAAAGATTA; site_14; 1; 24; 0; p
+BS  TTAAAACCCTAATAATAAAATGGG; site_15; 1; 24; 0; p
+BS  CCCAAGCCCAACTCTCAATTTCTA; site_16; 1; 24; 0; p
+BS  TAAAGGCCCAAATTATAAAAATAC; site_17; 1; 24; 0; p
+BS  ACGTAGCCCAAATTGAGATAAAGC; site_18; 1; 24; 0; p
+BS  ATAAAGCCCAAGTAATGCAAGGCC; site_19; 1; 24; 0; p
+BS  ATTAAGGGCATATGTTAAAATTAT; site_20; 1; 24; 0; p
+BS  CAATGGCCCAAAGATTAAAGAGCT; site_21; 1; 24; 0; p
+BS  AATAGGCCCAAACTTGAAAATGCC; site_22; 1; 24; 0; p
+BS  AATCAGGCCAAATTTGAAAATTCC; site_23; 1; 24; 0; p
+BS  AGGCAGCCCAAAATTCATAACCCA; site_24; 1; 24; 0; p
+BS  TAGAAGCCCAAGTCACTAAACATT; site_25; 1; 24; 0; p
+BS  CTATAGCCCAATGGCTATACTATC; site_26; 1; 24; 0; p
+BS  AAGAAGCCCATATTTGCAAAGAAA; site_27; 1; 24; 0; p
+BS  AAAGAGCCCAAATAGAAATAGTCC; site_28; 1; 24; 0; p
+BS  TGAAAGCCTAGAGTTTTGAAAAGA; site_29; 1; 24; 0; p
+BS  TTAAACCCTTAATTTTAAAAAATA; site_30; 1; 24; 0; p
+BS  TTAAAGCCCATTTATTAAATTATA; site_31; 1; 24; 0; p
+BS  GAAAATCCCAAATTTTTTATATAA; site_32; 1; 24; 0; p
+BS  CAAAGGCCCAAAACGTAAACAACA; site_33; 1; 24; 0; p
+BS  CAAAGGCCCAAAACGTAAACAACA; site_34; 1; 24; 0; p
+BS  TTAAAACCCATAATTAAAACTTAT; site_35; 1; 24; 0; p
+BS  TTAAATCCCACATATTCTAATACT; site_36; 1; 24; 0; p
+BS  AGGAGGCCCATATTTTGGACTTCG; site_37; 1; 24; 0; p
+BS  GATAAACCCAAATTTTTCACCTCT; site_38; 1; 24; 0; p
+BS  TTCTAGCCCAAATATGAAATGGGG; site_39; 1; 24; 0; p
+BS  ACAAATCCTAAACTCTAAAATAAC; site_40; 1; 24; 0; p
+BS  TACTAGCCCAAATTCTCAGTGTGG; site_41; 1; 24; 0; p
+BS  GTAAAACCTAAATTTACTAAGATA; site_42; 1; 24; 0; p
+BS  GTAAAACCTAAATTTACTAAGATA; site_43; 1; 24; 0; p
+BS  AGATGGCCCAAAATTTTATTTACG; site_44; 1; 24; 0; p
+BS  CCAAATCCCAAATATTCCAATTAT; site_45; 1; 24; 0; p
+BS  ATAAAGCCCATCTTTTGAATAGAG; site_46; 1; 24; 0; p
+BS  AGTAAGCCCAAACGAATAGTTAAC; site_47; 1; 24; 0; p
+BS  GCCCAGCCCAAGTTTAATACAAGT; site_48; 1; 24; 0; p
+BS  ACTAAGCACAAATAGTAACTTGAA; site_49; 1; 24; 0; p
+BS  CTCTAGCCCAATTGTTCAAAAAGG; site_50; 1; 24; 0; p
+BS  CACAAGCCCCAATTTCAATGTCAA; site_51; 1; 24; 0; p
+BS  CTAAAGCCCAAGATTTCATGAAGC; site_52; 1; 24; 0; p
+BS  TATAAACCTAAATTTCTAAAAATA; site_53; 1; 24; 0; p
+BS  GACGAGCCCTAATAAATAAATATA; site_54; 1; 24; 0; p
+BS  TATTGGCCCAAAACTAAAATTAGC; site_55; 1; 24; 0; p
+CC  program: transfac
+CC  matrix.nb: 1
+CC  accession: oligos_5-8nt_m1
+CC  AC: oligos_5-8nt_m1
+CC  id: oligos_5-8nt_m1
+CC  name: oligos_5-8nt_m1
+CC  version: 
+CC  name: oligos_5-8nt_m1
+CC  description: wwaaAGCCCAAATtttaAAawwyh
+CC  statistical_basis: 56 sequences
+CC  transfac_consensus: 
+CC  matrix.nb: 1
+CC  sites: 56
+CC  bg_markov_order: 1
+CC  consensus.strict: caaaaGCCCAaattttaaaatacc
+CC  consensus.strict.rc: GGTATTTTAAAATTTGGGCTTTTG
+CC  consensus.IUPAC: mmmaaGCCCAaattttaaaawasc
+CC  consensus.IUPAC.rc: GSTWTTTTAAAATTTGGGCTTKKK
+CC  consensus.regexp: [ac][ac][ac]aaGCCCAaattttaaaa[at]a[cg]c
+CC  consensus.regexp.rc: G[CG]T[AT]TTTTAAAATTTGGGCTT[GT][GT][GT]
+XX
+//
