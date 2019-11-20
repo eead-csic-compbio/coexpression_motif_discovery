@@ -1,0 +1,385 @@
+AC  dyads_test_vs_ctrl_m1
+XX
+ID  dyads_test_vs_ctrl_m1
+XX
+DE  trACACGTGTya
+P0       a     c     g     t
+1       85    66    70   121
+2       89    76    96    81
+3      278    31    14    19
+4       12   308     5    17
+5      319     4     9    10
+6       20   297     5    20
+7       20     5   297    20
+8       10     9     4   319
+9       17     5   308    12
+10      19    14    31   278
+11      81    96    76    89
+12     121    70    66    85
+XX
+BA  342 sequences
+XX
+BS  GCACACGTGACG; site_0; 1; 12; 0; p
+BS  CGTCACGTGTGC; site_1; 1; 12; 0; p
+BS  GAACAAGTGTTT; site_2; 1; 12; 0; p
+BS  AAACACTTGTTC; site_3; 1; 12; 0; p
+BS  CAACAAGTGTTG; site_4; 1; 12; 0; p
+BS  CAACACTTGTTG; site_5; 1; 12; 0; p
+BS  CCACACGTGTGA; site_6; 1; 12; 0; p
+BS  TCACACGTGTGG; site_7; 1; 12; 0; p
+BS  GTACACGTTTGA; site_8; 1; 12; 0; p
+BS  TCAAACGTGTAC; site_9; 1; 12; 0; p
+BS  GGACACGTGGCG; site_10; 1; 12; 0; p
+BS  CGCCACGTGTCC; site_11; 1; 12; 0; p
+BS  AAACATGTGTTA; site_12; 1; 12; 0; p
+BS  TAACACATGTTT; site_13; 1; 12; 0; p
+BS  GGTCACGTGTGA; site_14; 1; 12; 0; p
+BS  TCACACGTGACC; site_15; 1; 12; 0; p
+BS  ACCCACGTGTAT; site_16; 1; 12; 0; p
+BS  ATACACGTGGGT; site_17; 1; 12; 0; p
+BS  GAACACTTGTAC; site_18; 1; 12; 0; p
+BS  GTACAAGTGTTC; site_19; 1; 12; 0; p
+BS  ATACAAGTGTGA; site_20; 1; 12; 0; p
+BS  TCACACTTGTAT; site_21; 1; 12; 0; p
+BS  TAACATGTGTGA; site_22; 1; 12; 0; p
+BS  TCACACATGTTA; site_23; 1; 12; 0; p
+BS  TAACAGGTGTTA; site_24; 1; 12; 0; p
+BS  TAACACCTGTTA; site_25; 1; 12; 0; p
+BS  ATATACGTGTTT; site_26; 1; 12; 0; p
+BS  AAACACGTATAT; site_27; 1; 12; 0; p
+BS  TGACACGTGTGC; site_28; 1; 12; 0; p
+BS  GCACACGTGTCA; site_29; 1; 12; 0; p
+BS  TAACCCGTGTTC; site_30; 1; 12; 0; p
+BS  GAACACGGGTTA; site_31; 1; 12; 0; p
+BS  AGACACCTGTAA; site_32; 1; 12; 0; p
+BS  TTACAGGTGTCT; site_33; 1; 12; 0; p
+BS  ACATACGTGTAC; site_34; 1; 12; 0; p
+BS  GTACACGTATGT; site_35; 1; 12; 0; p
+BS  TGACAAGTGTCA; site_36; 1; 12; 0; p
+BS  TGACACTTGTCA; site_37; 1; 12; 0; p
+BS  GTATACGTGTCT; site_38; 1; 12; 0; p
+BS  AGACACGTATAC; site_39; 1; 12; 0; p
+BS  GAACACGTGTGT; site_40; 1; 12; 0; p
+BS  ACACACGTGTTC; site_41; 1; 12; 0; p
+BS  TAACACGTGCCA; site_42; 1; 12; 0; p
+BS  TGGCACGTGTTA; site_43; 1; 12; 0; p
+BS  CAACACTTGTCA; site_44; 1; 12; 0; p
+BS  TGACAAGTGTTG; site_45; 1; 12; 0; p
+BS  CCACACGTGGCC; site_46; 1; 12; 0; p
+BS  GGCCACGTGTGG; site_47; 1; 12; 0; p
+BS  CGACACGTGGTA; site_48; 1; 12; 0; p
+BS  TACCACGTGTCG; site_49; 1; 12; 0; p
+BS  TAACACGTGTAA; site_50; 1; 12; 0; p
+BS  TTACACGTGTTA; site_51; 1; 12; 0; p
+BS  TAATACGTGTCT; site_52; 1; 12; 0; p
+BS  AGACACGTATTA; site_53; 1; 12; 0; p
+BS  TAACACGTCTAC; site_54; 1; 12; 0; p
+BS  GTAGACGTGTTA; site_55; 1; 12; 0; p
+BS  GTAAACGTGTAT; site_56; 1; 12; 0; p
+BS  ATACACGTTTAC; site_57; 1; 12; 0; p
+BS  TCAAACGTGTTT; site_58; 1; 12; 0; p
+BS  AAACACGTTTGA; site_59; 1; 12; 0; p
+BS  ACACACATGTCA; site_60; 1; 12; 0; p
+BS  TGACATGTGTGT; site_61; 1; 12; 0; p
+BS  GGACACGTGGAC; site_62; 1; 12; 0; p
+BS  GTCCACGTGTCC; site_63; 1; 12; 0; p
+BS  TAACTCGTGTTG; site_64; 1; 12; 0; p
+BS  CAACACGAGTTA; site_65; 1; 12; 0; p
+BS  TTGCACGTGTGG; site_66; 1; 12; 0; p
+BS  CCACACGTGCAA; site_67; 1; 12; 0; p
+BS  GCACACGTGTGG; site_68; 1; 12; 0; p
+BS  CCACACGTGTGC; site_69; 1; 12; 0; p
+BS  AGACACGTGAGA; site_70; 1; 12; 0; p
+BS  TCTCACGTGTCT; site_71; 1; 12; 0; p
+BS  AATCACGTGTTA; site_72; 1; 12; 0; p
+BS  TAACACGTGATT; site_73; 1; 12; 0; p
+BS  TAACATGTGTAT; site_74; 1; 12; 0; p
+BS  ATACACATGTTA; site_75; 1; 12; 0; p
+BS  GCGCACGCGTTT; site_76; 1; 12; 0; p
+BS  AAACGCGTGCGC; site_77; 1; 12; 0; p
+BS  GGACACGTGTTC; site_78; 1; 12; 0; p
+BS  GAACACGTGTCC; site_79; 1; 12; 0; p
+BS  ATACACGTCTCA; site_80; 1; 12; 0; p
+BS  TGAGACGTGTAT; site_81; 1; 12; 0; p
+BS  TGCCACGTGTAG; site_82; 1; 12; 0; p
+BS  CTACACGTGGCA; site_83; 1; 12; 0; p
+BS  CGACACCTGTAA; site_84; 1; 12; 0; p
+BS  TTACAGGTGTCG; site_85; 1; 12; 0; p
+BS  CTACGCGAGTTA; site_86; 1; 12; 0; p
+BS  TAACTCGCGTAG; site_87; 1; 12; 0; p
+BS  CTACACTTGTCA; site_88; 1; 12; 0; p
+BS  TGACAAGTGTAG; site_89; 1; 12; 0; p
+BS  ACACACGTATAC; site_90; 1; 12; 0; p
+BS  GTATACGTGTGT; site_91; 1; 12; 0; p
+BS  TTTCACGTGTCT; site_92; 1; 12; 0; p
+BS  AGACACGTGAAA; site_93; 1; 12; 0; p
+BS  TGACACGTGGTT; site_94; 1; 12; 0; p
+BS  AACCACGTGTCA; site_95; 1; 12; 0; p
+BS  TCACACGTATAA; site_96; 1; 12; 0; p
+BS  TTATACGTGTGA; site_97; 1; 12; 0; p
+BS  TATCACGTGTAC; site_98; 1; 12; 0; p
+BS  GTACACGTGATA; site_99; 1; 12; 0; p
+BS  GCCCACGTGTGG; site_100; 1; 12; 0; p
+BS  CCACACGTGGGC; site_101; 1; 12; 0; p
+BS  GCCCACGTGTGG; site_102; 1; 12; 0; p
+BS  CCACACGTGGGC; site_103; 1; 12; 0; p
+BS  TACCACGTGTCA; site_104; 1; 12; 0; p
+BS  TGACACGTGGTA; site_105; 1; 12; 0; p
+BS  AAACACGTTTGA; site_106; 1; 12; 0; p
+BS  TCAAACGTGTTT; site_107; 1; 12; 0; p
+BS  TTGCACGTGTGA; site_108; 1; 12; 0; p
+BS  TCACACGTGCAA; site_109; 1; 12; 0; p
+BS  ATTCACGTGTTA; site_110; 1; 12; 0; p
+BS  TAACACGTGAAT; site_111; 1; 12; 0; p
+BS  CGACACGTATCA; site_112; 1; 12; 0; p
+BS  TGATACGTGTCG; site_113; 1; 12; 0; p
+BS  TCGCACGTGATA; site_114; 1; 12; 0; p
+BS  TATCACGTGCGA; site_115; 1; 12; 0; p
+BS  AAATACGTGTGG; site_116; 1; 12; 0; p
+BS  CCACACGTATTT; site_117; 1; 12; 0; p
+BS  AAATACGTGTGG; site_118; 1; 12; 0; p
+BS  CCACACGTATTT; site_119; 1; 12; 0; p
+BS  CGCCACGCGTTA; site_120; 1; 12; 0; p
+BS  TAACGCGTGGCG; site_121; 1; 12; 0; p
+BS  CAACACGTGAAC; site_122; 1; 12; 0; p
+BS  GTTCACGTGTTG; site_123; 1; 12; 0; p
+BS  ATCCACGTGTCT; site_124; 1; 12; 0; p
+BS  AGACACGTGGAT; site_125; 1; 12; 0; p
+BS  CAACACGTGAAC; site_126; 1; 12; 0; p
+BS  GTTCACGTGTTG; site_127; 1; 12; 0; p
+BS  ATCCACGTGTCT; site_128; 1; 12; 0; p
+BS  AGACACGTGGAT; site_129; 1; 12; 0; p
+BS  TGACACGTCTCT; site_130; 1; 12; 0; p
+BS  AGAGACGTGTCA; site_131; 1; 12; 0; p
+BS  AAACGCGCGTAG; site_132; 1; 12; 0; p
+BS  CTACGCGCGTTT; site_133; 1; 12; 0; p
+BS  CTCCACGTGTCC; site_134; 1; 12; 0; p
+BS  GGACACGTGGAG; site_135; 1; 12; 0; p
+BS  CCACACCTGTCC; site_136; 1; 12; 0; p
+BS  GGACAGGTGTGG; site_137; 1; 12; 0; p
+BS  GTGCACGTGTCA; site_138; 1; 12; 0; p
+BS  TGACACGTGCAC; site_139; 1; 12; 0; p
+BS  GCACACATGTGA; site_140; 1; 12; 0; p
+BS  TCACATGTGTGC; site_141; 1; 12; 0; p
+BS  TGGCACGTGTGG; site_142; 1; 12; 0; p
+BS  CCACACGTGCCA; site_143; 1; 12; 0; p
+BS  CAACACGTGTCC; site_144; 1; 12; 0; p
+BS  GGACACGTGTTG; site_145; 1; 12; 0; p
+BS  ACAGACGTGTAT; site_146; 1; 12; 0; p
+BS  ATACACGTCTGT; site_147; 1; 12; 0; p
+BS  AAACACGTGCCA; site_148; 1; 12; 0; p
+BS  TGGCACGTGTTT; site_149; 1; 12; 0; p
+BS  ATACACTTGTCA; site_150; 1; 12; 0; p
+BS  TGACAAGTGTAT; site_151; 1; 12; 0; p
+BS  TTATACGTGTAG; site_152; 1; 12; 0; p
+BS  CTACACGTATAA; site_153; 1; 12; 0; p
+BS  TTCCACGTGTCG; site_154; 1; 12; 0; p
+BS  CGACACGTGGAA; site_155; 1; 12; 0; p
+BS  TAACACGTGGAC; site_156; 1; 12; 0; p
+BS  GTCCACGTGTTA; site_157; 1; 12; 0; p
+BS  GAGCACGTGTGG; site_158; 1; 12; 0; p
+BS  CCACACGTGCTC; site_159; 1; 12; 0; p
+BS  CAACACGTGAAG; site_160; 1; 12; 0; p
+BS  CTTCACGTGTTG; site_161; 1; 12; 0; p
+BS  CCACTCGTGTCC; site_162; 1; 12; 0; p
+BS  GGACACGAGTGG; site_163; 1; 12; 0; p
+BS  GTCCACGTGTGA; site_164; 1; 12; 0; p
+BS  TCACACGTGGAC; site_165; 1; 12; 0; p
+BS  AGACTCGTGTTT; site_166; 1; 12; 0; p
+BS  AAACACGAGTCT; site_167; 1; 12; 0; p
+BS  TTCCACGTGTAA; site_168; 1; 12; 0; p
+BS  TTACACGTGGAA; site_169; 1; 12; 0; p
+BS  AAAAACGTGTGA; site_170; 1; 12; 0; p
+BS  TCACACGTTTTT; site_171; 1; 12; 0; p
+BS  CGTCACGTGTTG; site_172; 1; 12; 0; p
+BS  CAACACGTGACG; site_173; 1; 12; 0; p
+BS  CAAGACGTGTAT; site_174; 1; 12; 0; p
+BS  ATACACGTCTTG; site_175; 1; 12; 0; p
+BS  TAACACGCGACT; site_176; 1; 12; 0; p
+BS  AGTCGCGTGTTA; site_177; 1; 12; 0; p
+BS  TTACACGTGCAA; site_178; 1; 12; 0; p
+BS  TTGCACGTGTAA; site_179; 1; 12; 0; p
+BS  CCACACGTGGGG; site_180; 1; 12; 0; p
+BS  CCCCACGTGTGG; site_181; 1; 12; 0; p
+BS  ACACACGAGTGA; site_182; 1; 12; 0; p
+BS  TCACTCGTGTGT; site_183; 1; 12; 0; p
+BS  GGTCACGTGTAA; site_184; 1; 12; 0; p
+BS  TTACACGTGACC; site_185; 1; 12; 0; p
+BS  CGACACGAGTCC; site_186; 1; 12; 0; p
+BS  GGACTCGTGTCG; site_187; 1; 12; 0; p
+BS  TTACACATGTAG; site_188; 1; 12; 0; p
+BS  CTACATGTGTAA; site_189; 1; 12; 0; p
+BS  CGACACGAGTCC; site_190; 1; 12; 0; p
+BS  GGACTCGTGTCG; site_191; 1; 12; 0; p
+BS  TTACACATGTAG; site_192; 1; 12; 0; p
+BS  CTACATGTGTAA; site_193; 1; 12; 0; p
+BS  TGACATGTGTAT; site_194; 1; 12; 0; p
+BS  ATACACATGTCA; site_195; 1; 12; 0; p
+BS  GGACACGTGTCT; site_196; 1; 12; 0; p
+BS  AGACACGTGTCC; site_197; 1; 12; 0; p
+BS  GTATACGTGTCC; site_198; 1; 12; 0; p
+BS  GGACACGTATAC; site_199; 1; 12; 0; p
+BS  AGACACGTGACA; site_200; 1; 12; 0; p
+BS  TGTCACGTGTCT; site_201; 1; 12; 0; p
+BS  AAACACGTGTTA; site_202; 1; 12; 0; p
+BS  TAACACGTGTTT; site_203; 1; 12; 0; p
+BS  GCGCACGTGTTG; site_204; 1; 12; 0; p
+BS  CAACACGTGCGC; site_205; 1; 12; 0; p
+BS  TGACAAGTGTCA; site_206; 1; 12; 0; p
+BS  TGACACTTGTCA; site_207; 1; 12; 0; p
+BS  TCCCACGTGTCA; site_208; 1; 12; 0; p
+BS  TGACACGTGGGA; site_209; 1; 12; 0; p
+BS  TATCACGCGTGT; site_210; 1; 12; 0; p
+BS  ACACGCGTGATA; site_211; 1; 12; 0; p
+BS  TCACGCGTGTAA; site_212; 1; 12; 0; p
+BS  TTACACGCGTGA; site_213; 1; 12; 0; p
+BS  GTACTCGTGTCG; site_214; 1; 12; 0; p
+BS  CGACACGAGTAC; site_215; 1; 12; 0; p
+BS  ATTCACGTGTAA; site_216; 1; 12; 0; p
+BS  TTACACGTGAAT; site_217; 1; 12; 0; p
+BS  ACACACTTGTCT; site_218; 1; 12; 0; p
+BS  AGACAAGTGTGT; site_219; 1; 12; 0; p
+BS  AAACATGTGTTT; site_220; 1; 12; 0; p
+BS  AAACACATGTTT; site_221; 1; 12; 0; p
+BS  TGACATGTGTGC; site_222; 1; 12; 0; p
+BS  GCACACATGTCA; site_223; 1; 12; 0; p
+BS  ACACACGTGCCT; site_224; 1; 12; 0; p
+BS  AGGCACGTGTGT; site_225; 1; 12; 0; p
+BS  ACACACGTGATG; site_226; 1; 12; 0; p
+BS  CATCACGTGTGT; site_227; 1; 12; 0; p
+BS  TAACACTTGTTG; site_228; 1; 12; 0; p
+BS  CAACAAGTGTTA; site_229; 1; 12; 0; p
+BS  CTACACATGTAC; site_230; 1; 12; 0; p
+BS  GTACATGTGTAG; site_231; 1; 12; 0; p
+BS  GTCCACGTGTCA; site_232; 1; 12; 0; p
+BS  TGACACGTGGAC; site_233; 1; 12; 0; p
+BS  GCACACGTGGCC; site_234; 1; 12; 0; p
+BS  GGCCACGTGTGC; site_235; 1; 12; 0; p
+BS  CACCACGTGTAT; site_236; 1; 12; 0; p
+BS  ATACACGTGGTG; site_237; 1; 12; 0; p
+BS  CGACACGTTTTA; site_238; 1; 12; 0; p
+BS  TAAAACGTGTCG; site_239; 1; 12; 0; p
+BS  TCACACGTGGCT; site_240; 1; 12; 0; p
+BS  AGCCACGTGTGA; site_241; 1; 12; 0; p
+BS  GGGCACGTGTCG; site_242; 1; 12; 0; p
+BS  CGACACGTGCCC; site_243; 1; 12; 0; p
+BS  GCACCCGTGTTT; site_244; 1; 12; 0; p
+BS  AAACACGGGTGC; site_245; 1; 12; 0; p
+BS  AGACACGTGTCC; site_246; 1; 12; 0; p
+BS  GGACACGTGTCT; site_247; 1; 12; 0; p
+BS  ATACATGTGTGC; site_248; 1; 12; 0; p
+BS  GCACACATGTAT; site_249; 1; 12; 0; p
+BS  GTACGCGTGCGA; site_250; 1; 12; 0; p
+BS  TCGCACGCGTAC; site_251; 1; 12; 0; p
+BS  TAACACATGTCC; site_252; 1; 12; 0; p
+BS  GGACATGTGTTA; site_253; 1; 12; 0; p
+BS  ATACACGGGTGT; site_254; 1; 12; 0; p
+BS  ACACCCGTGTAT; site_255; 1; 12; 0; p
+BS  TAACCCGTGTTG; site_256; 1; 12; 0; p
+BS  CAACACGGGTTA; site_257; 1; 12; 0; p
+BS  CCACAGGTGTCT; site_258; 1; 12; 0; p
+BS  AGACACCTGTGG; site_259; 1; 12; 0; p
+BS  TTCCACGTGTAT; site_260; 1; 12; 0; p
+BS  ATACACGTGGAA; site_261; 1; 12; 0; p
+BS  GAAAACGTGTAG; site_262; 1; 12; 0; p
+BS  CTACACGTTTTC; site_263; 1; 12; 0; p
+BS  CATCACGTGTGC; site_264; 1; 12; 0; p
+BS  GCACACGTGATG; site_265; 1; 12; 0; p
+BS  TAAAACGTGTTC; site_266; 1; 12; 0; p
+BS  GAACACGTTTTA; site_267; 1; 12; 0; p
+BS  AAACACGTGTCA; site_268; 1; 12; 0; p
+BS  TGACACGTGTTT; site_269; 1; 12; 0; p
+BS  TCATACGTGTCT; site_270; 1; 12; 0; p
+BS  AGACACGTATGA; site_271; 1; 12; 0; p
+BS  TTACATGTGTAC; site_272; 1; 12; 0; p
+BS  GTACACATGTAA; site_273; 1; 12; 0; p
+BS  ACCCACGTGTGC; site_274; 1; 12; 0; p
+BS  GCACACGTGGGT; site_275; 1; 12; 0; p
+BS  CAACACATGTGA; site_276; 1; 12; 0; p
+BS  TCACATGTGTTG; site_277; 1; 12; 0; p
+BS  TCACACATGTAG; site_278; 1; 12; 0; p
+BS  CTACATGTGTGA; site_279; 1; 12; 0; p
+BS  CAACACGTATTT; site_280; 1; 12; 0; p
+BS  AAATACGTGTTG; site_281; 1; 12; 0; p
+BS  TGACAAGTGTCC; site_282; 1; 12; 0; p
+BS  GGACACTTGTCA; site_283; 1; 12; 0; p
+BS  TTACACGTATCT; site_284; 1; 12; 0; p
+BS  AGATACGTGTAA; site_285; 1; 12; 0; p
+BS  TCACACATGTCA; site_286; 1; 12; 0; p
+BS  TGACATGTGTGA; site_287; 1; 12; 0; p
+BS  ACCCACGTGTCC; site_288; 1; 12; 0; p
+BS  GGACACGTGGGT; site_289; 1; 12; 0; p
+BS  CCATACGTGTCG; site_290; 1; 12; 0; p
+BS  CGACACGTATGG; site_291; 1; 12; 0; p
+BS  TAAAACGTGTTA; site_292; 1; 12; 0; p
+BS  TAACACGTTTTA; site_293; 1; 12; 0; p
+BS  TGCCACGTGTCA; site_294; 1; 12; 0; p
+BS  TGACACGTGGCA; site_295; 1; 12; 0; p
+BS  TTACTCGTGTCT; site_296; 1; 12; 0; p
+BS  AGACACGAGTAA; site_297; 1; 12; 0; p
+BS  GAACACGTGGAT; site_298; 1; 12; 0; p
+BS  ATCCACGTGTTC; site_299; 1; 12; 0; p
+BS  TAACACTTGTTG; site_300; 1; 12; 0; p
+BS  CAACAAGTGTTA; site_301; 1; 12; 0; p
+BS  AAACAAGTGTGC; site_302; 1; 12; 0; p
+BS  GCACACTTGTTT; site_303; 1; 12; 0; p
+BS  TGACATGTGTAT; site_304; 1; 12; 0; p
+BS  ATACACATGTCA; site_305; 1; 12; 0; p
+BS  ATATACGTGTGT; site_306; 1; 12; 0; p
+BS  ACACACGTATAT; site_307; 1; 12; 0; p
+BS  AAACACGTGTAA; site_308; 1; 12; 0; p
+BS  TTACACGTGTTT; site_309; 1; 12; 0; p
+BS  GAAAACGTGTCG; site_310; 1; 12; 0; p
+BS  CGACACGTTTTC; site_311; 1; 12; 0; p
+BS  TGACACGAGTTA; site_312; 1; 12; 0; p
+BS  TAACTCGTGTCA; site_313; 1; 12; 0; p
+BS  TCACATGTGTTT; site_314; 1; 12; 0; p
+BS  AAACACATGTGA; site_315; 1; 12; 0; p
+BS  GAACATGTGTGT; site_316; 1; 12; 0; p
+BS  ACACACATGTTC; site_317; 1; 12; 0; p
+BS  TAACACTTGTAT; site_318; 1; 12; 0; p
+BS  ATACAAGTGTTA; site_319; 1; 12; 0; p
+BS  TGAAACGTGTTC; site_320; 1; 12; 0; p
+BS  GAACACGTTTCA; site_321; 1; 12; 0; p
+BS  CTACACGTGGCA; site_322; 1; 12; 0; p
+BS  TGCCACGTGTAG; site_323; 1; 12; 0; p
+BS  TCACACGTGTCA; site_324; 1; 12; 0; p
+BS  TGACACGTGTGA; site_325; 1; 12; 0; p
+BS  GTACAAGTGTTG; site_326; 1; 12; 0; p
+BS  CAACACTTGTAC; site_327; 1; 12; 0; p
+BS  CCACACGTATAT; site_328; 1; 12; 0; p
+BS  ATATACGTGTGG; site_329; 1; 12; 0; p
+BS  AAAAACGTGTAC; site_330; 1; 12; 0; p
+BS  GTACACGTTTTT; site_331; 1; 12; 0; p
+BS  TCCCACGTGTCG; site_332; 1; 12; 0; p
+BS  CGACACGTGGGA; site_333; 1; 12; 0; p
+BS  TGACACTTGTCC; site_334; 1; 12; 0; p
+BS  GGACAAGTGTCA; site_335; 1; 12; 0; p
+BS  TGACAAGTGTCA; site_336; 1; 12; 0; p
+BS  TGACACTTGTCA; site_337; 1; 12; 0; p
+BS  TGACAAGTGTCA; site_338; 1; 12; 0; p
+BS  TGACACTTGTCA; site_339; 1; 12; 0; p
+BS  ACACACTTGTGT; site_340; 1; 12; 0; p
+BS  ACACAAGTGTGT; site_341; 1; 12; 0; p
+CC  program: transfac
+CC  matrix.nb: 6
+CC  accession: dyads_test_vs_ctrl_m1
+CC  AC: dyads_test_vs_ctrl_m1
+CC  id: dyads_test_vs_ctrl_m1
+CC  name: dyads_test_vs_ctrl_m1
+CC  version: 
+CC  name: dyads_test_vs_ctrl_m1
+CC  description: trACACGTGTya
+CC  statistical_basis: 342 sequences
+CC  transfac_consensus: 
+CC  matrix.nb: 6
+CC  sites: 342
+CC  bg_markov_order: 1
+CC  consensus.strict: ggaCACGTGtca
+CC  consensus.strict.rc: TGACACGTGTCC
+CC  consensus.IUPAC: ksaCACGTGtsv
+CC  consensus.IUPAC.rc: BSACACGTGTSM
+CC  consensus.regexp: [gt][cg]aCACGTGt[cg][acg]
+CC  consensus.regexp.rc: [CGT][CG]ACACGTGT[CG][AC]
+XX
+//
