@@ -1,0 +1,990 @@
+<html><head><title>One-to-n alignments</title><style type="text/css">
+/* Style sheet for the HTML formatting of RSAT results */
+
+/* BODY  */
+body {
+       font-family: Verdana, Helvetica, Arial, sans-serif;
+       font-size: 70%;
+       margin-top: 2px;
+       margin-left: 20px;
+       text-align: justify;
+       background: #ffffff;
+       margin-right: 20px;
+/*       background: #0D73A7 url(images/bullet2-normal.gif) no-repeat 7px 7px;*/
+}
+
+
+/* div for menu */
+
+#Menu_space {
+	margin-top:120px;
+	margin-bottom:300px;
+}
+#Menu_wait {
+	position:absolute;
+	top:120px;
+	left:50%;
+	width:400px;
+	margin-left: -200px;
+	padding:10px;
+	text-align:center;
+	}
+
+#Menu {
+	position:absolute;
+	top:120px;
+	left:50%;
+	width:800px;
+	margin-left: -400px;
+	padding:10px;
+	background-color:#eee;
+	border:1px dashed #999;
+	line-height:17px;
+	font-size: 110%;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	text-align:left;
+	}
+
+#Menu h3 {
+	margin:0;
+	text-align:center;
+	padding-bottom:5px;
+}
+
+#Menu ul {
+	list-style-type:none;
+}
+
+/* TABLE */
+#Menu table {
+	margin: 10px 10px 10px;
+}
+
+#Menu  td, th {
+	font-size: 70%;
+	padding: 2px 10px;
+	vertical-align:top;
+}
+
+.menulink a:link,a:visited {
+	color:#cc6600;
+	background: transparent;
+	text-decoration: none;
+	}
+
+.menulink a:visited {
+	color:#cc6600;
+	background: transparent;
+	text-decoration: none;
+	}
+
+.menulink A:active {
+	color: #cc6600;
+	background: transparent;
+	text-decoration: none
+}
+
+.menulink A:hover {
+	text-decoration: underline;
+	color: #cc6600;
+}
+
+
+/* Links  */
+
+A:link,A:visited {
+	color: #0D73A7;
+	background: transparent;
+	text-decoration: none;
+}
+
+A:active {
+	color: #ff0000;
+	background: transparent;
+	text-decoration: none
+}
+
+A:hover {
+	text-decoration: underline;
+	color: #cc6600;
+}
+
+/* Headers  */
+
+h1 {
+	margin-top: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	border: 1px solid #2D282E;
+	background-color: #0D73A7;
+	font-size: 16px;
+	color: #D6EEFA;
+}
+h1 a:link, h1 a:visited {
+	color: #D6EEFA;
+}
+
+h1 a:hover {
+	color: #ffffff;
+}
+
+h2 {
+	margin-top: 10px;
+	padding-top: 15px;
+	margin-bottom: 0px;
+	color: #002266;
+	font-size: 15px;
+}
+
+h3 {
+	margin-top: 6px;
+	padding-top: 6px;
+	margin-bottom: 0px;
+	color: #002266;
+	font-size: 11px;
+}
+
+h4 {
+	margin-top: 4px;
+	padding-top: 4px;
+	margin-bottom: 0px;
+	color : #2D282E;
+	font-size: 11px;
+}
+
+h2.motif {
+	margin-top: 3px;
+	padding-top: 0px;
+	margin-bottom: 4px;
+	color : #2D282E;
+	font-size: 12px;
+}
+
+/* Other tag formatting  */
+hr {
+	border: 1px dotted #2D282E;
+	height: 1px;
+}
+
+hr.solid {
+	border: 1px solid #2D282E;
+	height: 1px;
+}
+
+pre,tt {
+         font-size: 12px;
+}
+
+pre { 
+      background:#EEEEEE;
+ }
+
+
+center {
+	margin-top: 5px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+blockquote {
+	color : #cc6600;
+	font-size: 12px;
+}
+
+body blockquote.information {
+	color : #009900;
+	font-size: 12px;
+}
+
+body blockquote.warning {
+	color : #aa0000;
+	font-size: 12px;
+}
+
+blockquote.demo {
+	color : #000000;
+	font-size: 12px;
+	font-style:italic;
+}
+
+
+
+/* TABLE */
+table.simple {
+	margin: 10px 20px 20px;
+	color: #000000;
+}
+
+table.simple td,table.list th {
+	font-size: 70%;
+	padding: 2px 10px;
+	background-color: #FFFFFF;
+	page-break-inside: auto;
+}
+
+table.simple th {
+	font-size: 70%;
+	background-color: #F6E6CA;
+}
+
+/* TABLE */
+
+/* table with white bg and small fonts */
+table.whitebg {
+	margin: 10px 20px 20px;
+	color: #000000;
+	border-left: 1px solid #cbcbb4;
+	border-top: 1px solid #cbcbb4;
+	border-spacing: 0px;
+}
+
+table.whitebg td,table.whitebg th {
+	font-size: 70%;
+	border-right: 1px solid #cbcbb4;
+	border-bottom: 1px solid #cbcbb4;
+	padding: 2px 10px;
+	background-color: #FFFFFF;
+	page-break-inside: auto;
+}
+
+
+/* table with blue bg and small font */
+table.whitebg th {
+	font-size: 70%;
+	background-color: #F6E6CA;
+}
+
+table.bluebg {
+	color: #333333;
+	border-left: 1px solid #cbcbb4;
+	border-top: 1px solid #cbcbb4;
+	}
+
+table.bluebg td,table.bluebg th {
+	font-size: 70%;
+	border-right: 1px solid #cbcbb4;
+	border-bottom: 1px solid #cbcbb4;
+	background-color: #D6EEFA;
+	page-break-inside: auto;
+}
+
+table.bluebg th {
+	background-color: #0D73A7;
+	color: #D6EEFA;
+}
+	
+/* Table on result pages - compatible with the sorttable type defined by javascript */
+
+table.sortable {
+	margin: 10px 20px 20px;
+	color: #000000;
+	border-left: 1px solid #cbcbb4;
+	border-right: 1px solid #cbcbb4;
+	border-top: 1px solid #cbcbb4;
+	border-bottom: 1px solid #cbcbb4;
+	border-spacing: 0px;
+}
+
+table.sortable td,table.sortable th {
+	padding: 2px 10px;
+	font-size: 70%;
+	border-right: 1px solid #cbcbb4;
+	border-bottom: 1px solid #cbcbb4;
+	padding: 2px 10px;
+	background-color: #FFFFFF;
+	page-break-inside: auto;
+}
+
+table.sortable th {
+	font-size: 70%;
+	background-color: #0D73A7;
+	color: #D6EEFA;
+}
+
+
+/* LINK TABLE ON RESULTS PAGES */
+table.resultlink {
+	margin-left:5px;
+	width : 90%;
+	color: #2D282E;
+	background-color: #D6EEFA;
+}
+
+
+table.resultlink td, table.resultlink th {
+	font-size: 70%;
+	padding-left:5px;
+	padding-right:3px;
+	text-align :left;
+	page-break-inside: auto;
+}
+
+/* COLLAPSIBLE MENUS */
+
+.menu_heading_open {
+	background: url(images_html/arrow_box_down.gif) no-repeat 5px 7px;
+	text-decoration: none;
+	padding: 0px 6px 4px 21px;
+	margin: 0;
+	cursor: pointer;
+	font-weight: bold;
+	display: block;
+}
+
+.menu_heading_closed {
+	background: url(images_html/arrow_box.gif) no-repeat 5px 7px;
+	text-decoration: underline; 
+	display: block;
+	padding:0px 6px 4px 21px;
+	margin: 0;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.menu_collapsible {
+	display: none;
+	margin-bottom: 10px;
+	margin-left: 30px;
+}
+
+.menu_collapsible_display {
+   display: block;
+   margin-bottom: 10px;
+   margin-left: 30px;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+ <!-- 
+var stIsIE = /*@cc_on!@*/false;
+
+sorttable = {
+  init: function() {
+    // quit if this function has already been called
+    if (arguments.callee.done) return;
+    // flag this function so we don't do the same thing twice
+    arguments.callee.done = true;
+    // kill the timer
+    if (_timer) clearInterval(_timer);
+    
+    if (!document.createElement || !document.getElementsByTagName) return;
+    
+    sorttable.DATE_RE = /^(\d\d?)[\/\.-](\d\d?)[\/\.-]((\d\d)?\d\d)$/;
+    
+    forEach(document.getElementsByTagName('table'), function(table) {
+      if (table.className.search(/\bsortable\b/) != -1) {
+        sorttable.makeSortable(table);
+      }
+    });
+    
+  },
+  
+  makeSortable: function(table) {
+    if (table.getElementsByTagName('thead').length == 0) {
+      // table doesn't have a tHead. Since it should have, create one and
+      // put the first table row in it.
+      the = document.createElement('thead');
+      the.appendChild(table.rows[0]);
+      table.insertBefore(the,table.firstChild);
+    }
+    // Safari doesn't support table.tHead, sigh
+    if (table.tHead == null) table.tHead = table.getElementsByTagName('thead')[0];
+    
+    if (table.tHead.rows.length != 1) return; // can't cope with two header rows
+    
+    // Sorttable v1 put rows with a class of "sortbottom" at the bottom (as
+    // "total" rows, for example). This is B&R, since what you're supposed
+    // to do is put them in a tfoot. So, if there are sortbottom rows,
+    // for backwards compatibility, move them to tfoot (creating it if needed).
+    sortbottomrows = [];
+    for (var i=0; i<table.rows.length; i++) {
+      if (table.rows[i].className.search(/\bsortbottom\b/) != -1) {
+        sortbottomrows[sortbottomrows.length] = table.rows[i];
+      }
+    }
+    if (sortbottomrows) {
+      if (table.tFoot == null) {
+        // table doesn't have a tfoot. Create one.
+        tfo = document.createElement('tfoot');
+        table.appendChild(tfo);
+      }
+      for (var i=0; i<sortbottomrows.length; i++) {
+        tfo.appendChild(sortbottomrows[i]);
+      }
+      delete sortbottomrows;
+    }
+    
+    // work through each column and calculate its type
+    headrow = table.tHead.rows[0].cells;
+    for (var i=0; i<headrow.length; i++) {
+      // manually override the type with a sorttable_type attribute
+      if (!headrow[i].className.match(/\bsorttable_nosort\b/)) { // skip this col
+        mtch = headrow[i].className.match(/\bsorttable_([a-z0-9]+)\b/);
+        if (mtch) { override = mtch[1]; }
+	      if (mtch && typeof sorttable["sort_"+override] == 'function') {
+	        headrow[i].sorttable_sortfunction = sorttable["sort_"+override];
+	      } else {
+	        headrow[i].sorttable_sortfunction = sorttable.guessType(table,i);
+	      }
+	      // make it clickable to sort
+	      headrow[i].sorttable_columnindex = i;
+	      headrow[i].sorttable_tbody = table.tBodies[0];
+	      dean_addEvent(headrow[i],"click", function(e) {
+
+          if (this.className.search(/\bsorttable_sorted\b/) != -1) {
+            // if we're already sorted by this column, just 
+            // reverse the table, which is quicker
+            sorttable.reverse(this.sorttable_tbody);
+            this.className = this.className.replace('sorttable_sorted',
+                                                    'sorttable_sorted_reverse');
+            this.removeChild(document.getElementById('sorttable_sortfwdind'));
+            sortrevind = document.createElement('span');
+            sortrevind.id = "sorttable_sortrevind";
+            sortrevind.innerHTML = stIsIE ? '&nbsp<font face="webdings">5</font>' : '&nbsp;&#x25B4;';
+            this.appendChild(sortrevind);
+            return;
+          }
+          if (this.className.search(/\bsorttable_sorted_reverse\b/) != -1) {
+            // if we're already sorted by this column in reverse, just 
+            // re-reverse the table, which is quicker
+            sorttable.reverse(this.sorttable_tbody);
+            this.className = this.className.replace('sorttable_sorted_reverse',
+                                                    'sorttable_sorted');
+            this.removeChild(document.getElementById('sorttable_sortrevind'));
+            sortfwdind = document.createElement('span');
+            sortfwdind.id = "sorttable_sortfwdind";
+            sortfwdind.innerHTML = stIsIE ? '&nbsp<font face="webdings">6</font>' : '&nbsp;&#x25BE;';
+            this.appendChild(sortfwdind);
+            return;
+          }
+          
+          // remove sorttable_sorted classes
+          theadrow = this.parentNode;
+          forEach(theadrow.childNodes, function(cell) {
+            if (cell.nodeType == 1) { // an element
+              cell.className = cell.className.replace('sorttable_sorted_reverse','');
+              cell.className = cell.className.replace('sorttable_sorted','');
+            }
+          });
+          sortfwdind = document.getElementById('sorttable_sortfwdind');
+          if (sortfwdind) { sortfwdind.parentNode.removeChild(sortfwdind); }
+          sortrevind = document.getElementById('sorttable_sortrevind');
+          if (sortrevind) { sortrevind.parentNode.removeChild(sortrevind); }
+          
+          this.className += ' sorttable_sorted';
+          sortfwdind = document.createElement('span');
+          sortfwdind.id = "sorttable_sortfwdind";
+          sortfwdind.innerHTML = stIsIE ? '&nbsp<font face="webdings">6</font>' : '&nbsp;&#x25BE;';
+          this.appendChild(sortfwdind);
+
+	        // build an array to sort. This is a Schwartzian transform thing,
+	        // i.e., we "decorate" each row with the actual sort key,
+	        // sort based on the sort keys, and then put the rows back in order
+	        // which is a lot faster because you only do getInnerText once per row
+	        row_array = [];
+	        col = this.sorttable_columnindex;
+	        rows = this.sorttable_tbody.rows;
+	        for (var j=0; j<rows.length; j++) {
+	          row_array[row_array.length] = [sorttable.getInnerText(rows[j].cells[col]), rows[j]];
+	        }
+	        /* If you want a stable sort, uncomment the following line */
+	        //sorttable.shaker_sort(row_array, this.sorttable_sortfunction);
+	        /* and comment out this one */
+	        row_array.sort(this.sorttable_sortfunction);
+	        
+	        tb = this.sorttable_tbody;
+	        for (var j=0; j<row_array.length; j++) {
+	          tb.appendChild(row_array[j][1]);
+	        }
+	        
+	        delete row_array;
+	      });
+	    }
+    }
+  },
+  
+  guessType: function(table, column) {
+    // guess the type of a column based on its first non-blank row
+    sortfn = sorttable.sort_alpha;
+    for (var i=0; i<table.tBodies[0].rows.length; i++) {
+      text = sorttable.getInnerText(table.tBodies[0].rows[i].cells[column]);
+      if (text != '') {
+        if (text.match(/^-?[�$�]?[\d,.]+%?$/)||text.match(/^\d+((\.|,)\d+)?(E|e)(\+|\-)\d+/)) {
+          return sorttable.sort_numeric;
+        }
+        // check for a date: dd/mm/yyyy or dd/mm/yy 
+        // can have / or . or - as separator
+        // can be mm/dd as well
+        possdate = text.match(sorttable.DATE_RE)
+        if (possdate) {
+          // looks like a date
+          first = parseInt(possdate[1]);
+          second = parseInt(possdate[2]);
+          if (first > 12) {
+            // definitely dd/mm
+            return sorttable.sort_ddmm;
+          } else if (second > 12) {
+            return sorttable.sort_mmdd;
+          } else {
+            // looks like a date, but we can't tell which, so assume
+            // that it's dd/mm (English imperialism!) and keep looking
+            sortfn = sorttable.sort_ddmm;
+          }
+        }
+      }
+    }
+    return sortfn;
+  },
+  
+  getInnerText: function(node) {
+    // gets the text we want to use for sorting for a cell.
+    // strips leading and trailing whitespace.
+    // this is *not* a generic getInnerText function; it's special to sorttable.
+    // for example, you can override the cell text with a customkey attribute.
+    // it also gets .value for <input> fields.
+    
+    hasInputs = (typeof node.getElementsByTagName == 'function') &&
+                 node.getElementsByTagName('input').length;
+    
+    if (node.getAttribute("sorttable_customkey") != null) {
+      return node.getAttribute("sorttable_customkey");
+    }
+    else if (typeof node.textContent != 'undefined' && !hasInputs) {
+      return node.textContent.replace(/^\s+|\s+$/g, '');
+    }
+    else if (typeof node.innerText != 'undefined' && !hasInputs) {
+      return node.innerText.replace(/^\s+|\s+$/g, '');
+    }
+    else if (typeof node.text != 'undefined' && !hasInputs) {
+      return node.text.replace(/^\s+|\s+$/g, '');
+    }
+    else {
+      switch (node.nodeType) {
+        case 3:
+          if (node.nodeName.toLowerCase() == 'input') {
+            return node.value.replace(/^\s+|\s+$/g, '');
+          }
+        case 4:
+          return node.nodeValue.replace(/^\s+|\s+$/g, '');
+          break;
+        case 1:
+        case 11:
+          var innerText = '';
+          for (var i = 0; i < node.childNodes.length; i++) {
+            innerText += sorttable.getInnerText(node.childNodes[i]);
+          }
+          return innerText.replace(/^\s+|\s+$/g, '');
+          break;
+        default:
+          return '';
+      }
+    }
+  },
+  
+  reverse: function(tbody) {
+    // reverse the rows in a tbody
+    newrows = [];
+    for (var i=0; i<tbody.rows.length; i++) {
+      newrows[newrows.length] = tbody.rows[i];
+    }
+    for (var i=newrows.length-1; i>=0; i--) {
+       tbody.appendChild(newrows[i]);
+    }
+    delete newrows;
+  },
+  
+  /* sort functions
+     each sort function takes two parameters, a and b
+     you are comparing a[0] and b[0] */
+  /* Numeric order */
+  sort_numeric: function(a,b) {
+	aa = parseFloat(a[0].replace(/[^0-9.\-eE]/g,''));
+	if (isNaN(aa)) aa = 0;
+	bb = parseFloat(b[0].replace(/[^0-9.\-eE]/g,''));
+	if (isNaN(bb)) bb = 0;
+	return aa-bb;
+    },
+//   sort_numeric: function(a,b) {
+//     aa = parseFloat(a[0].replace(/[^0-9.-eE]/g,''));
+//     if (isNaN(aa)) aa = 0;
+//     bb = parseFloat(b[0].replace(/[^0-9.-eE]/g,'')); 
+//     if (isNaN(bb)) bb = 0;    
+//     return aa-bb;
+//   },
+
+  /* alphabetical order */
+  sort_alpha: function(a,b) {
+    if (a[0]==b[0]) return 0;
+    if (a[0]<b[0]) return -1;
+    return 1;
+  },
+
+  /* sort dates formatted as ddmm (day first, month after) */
+  sort_ddmm: function(a,b) {
+    mtch = a[0].match(sorttable.DATE_RE);
+    y = mtch[3]; m = mtch[2]; d = mtch[1];
+    if (m.length == 1) m = '0'+m;
+    if (d.length == 1) d = '0'+d;
+    dt1 = y+m+d;
+    mtch = b[0].match(sorttable.DATE_RE);
+    y = mtch[3]; m = mtch[2]; d = mtch[1];
+    if (m.length == 1) m = '0'+m;
+    if (d.length == 1) d = '0'+d;
+    dt2 = y+m+d;
+    if (dt1==dt2) return 0;
+    if (dt1<dt2) return -1;
+    return 1;
+  },
+
+  /* sort dates formatted as mmdd (month first, day after) */
+  sort_mmdd: function(a,b) {
+    mtch = a[0].match(sorttable.DATE_RE);
+    y = mtch[3]; d = mtch[2]; m = mtch[1];
+    if (m.length == 1) m = '0'+m;
+    if (d.length == 1) d = '0'+d;
+    dt1 = y+m+d;
+    mtch = b[0].match(sorttable.DATE_RE);
+    y = mtch[3]; d = mtch[2]; m = mtch[1];
+    if (m.length == 1) m = '0'+m;
+    if (d.length == 1) d = '0'+d;
+    dt2 = y+m+d;
+    if (dt1==dt2) return 0;
+    if (dt1<dt2) return -1;
+    return 1;
+  },
+  
+  shaker_sort: function(list, comp_func) {
+    // A stable sort function to allow multi-level sorting of data
+    // see: http://en.wikipedia.org/wiki/Cocktail_sort
+    // thanks to Joseph Nahmias
+    var b = 0;
+    var t = list.length - 1;
+    var swap = true;
+
+    while(swap) {
+        swap = false;
+        for(var i = b; i < t; ++i) {
+            if ( comp_func(list[i], list[i+1]) > 0 ) {
+                var q = list[i]; list[i] = list[i+1]; list[i+1] = q;
+                swap = true;
+            }
+        } // for
+        t--;
+
+        if (!swap) break;
+
+        for(var i = t; i > b; --i) {
+            if ( comp_func(list[i], list[i-1]) < 0 ) {
+                var q = list[i]; list[i] = list[i-1]; list[i-1] = q;
+                swap = true;
+            }
+        } // for
+        b++;
+
+    } // while(swap)
+  }  
+}
+
+/* ******************************************************************
+   Supporting functions: bundled here to avoid depending on a library
+   ****************************************************************** */
+
+// Dean Edwards/Matthias Miller/John Resig
+
+/* for Mozilla/Opera9 */
+if (document.addEventListener) {
+    document.addEventListener("DOMContentLoaded", sorttable.init, false);
+}
+
+/* for Internet Explorer */
+/*@cc_on @*/
+/*@if (@_win32)
+    document.write("<script id=__ie_onload defer src=javascript:void(0)><\/script>");
+    var script = document.getElementById("__ie_onload");
+    script.onreadystatechange = function() {
+        if (this.readyState == "complete") {
+            sorttable.init(); // call the onload handler
+        }
+    };
+/*@end @*/
+
+/* for Safari */
+if (/WebKit/i.test(navigator.userAgent)) { // sniff
+    var _timer = setInterval(function() {
+        if (/loaded|complete/.test(document.readyState)) {
+            sorttable.init(); // call the onload handler
+        }
+    }, 10);
+}
+
+/* for other browsers */
+window.onload = sorttable.init;
+
+// written by Dean Edwards, 2005
+// with input from Tino Zijdel, Matthias Miller, Diego Perini
+
+// http://dean.edwards.name/weblog/2005/10/add-event/
+
+function dean_addEvent(element, type, handler) {
+	if (element.addEventListener) {
+		element.addEventListener(type, handler, false);
+	} else {
+		// assign each event handler a unique ID
+		if (!handler.$$guid) handler.$$guid = dean_addEvent.guid++;
+		// create a hash table of event types for the element
+		if (!element.events) element.events = {};
+		// create a hash table of event handlers for each element/event pair
+		var handlers = element.events[type];
+		if (!handlers) {
+			handlers = element.events[type] = {};
+			// store the existing event handler (if there is one)
+			if (element["on" + type]) {
+				handlers[0] = element["on" + type];
+			}
+		}
+		// store the event handler in the hash table
+		handlers[handler.$$guid] = handler;
+		// assign a global event handler to do all the work
+		element["on" + type] = handleEvent;
+	}
+};
+// a counter used to create unique IDs
+dean_addEvent.guid = 1;
+
+function removeEvent(element, type, handler) {
+	if (element.removeEventListener) {
+		element.removeEventListener(type, handler, false);
+	} else {
+		// delete the event handler from the hash table
+		if (element.events && element.events[type]) {
+			delete element.events[type][handler.$$guid];
+		}
+	}
+};
+
+function handleEvent(event) {
+	var returnValue = true;
+	// grab the event object (IE uses a global event object)
+	event = event || fixEvent(((this.ownerDocument || this.document || this).parentWindow || window).event);
+	// get a reference to the hash table of event handlers
+	var handlers = this.events[event.type];
+	// execute each event handler
+	for (var i in handlers) {
+		this.$$handleEvent = handlers[i];
+		if (this.$$handleEvent(event) === false) {
+			returnValue = false;
+		}
+	}
+	return returnValue;
+};
+
+function fixEvent(event) {
+	// add W3C standard event methods
+	event.preventDefault = fixEvent.preventDefault;
+	event.stopPropagation = fixEvent.stopPropagation;
+	return event;
+};
+fixEvent.preventDefault = function() {
+	this.returnValue = false;
+};
+fixEvent.stopPropagation = function() {
+  this.cancelBubble = true;
+}
+
+// Dean's forEach: http://dean.edwards.name/base/forEach.js
+/*
+	forEach, version 1.0
+	Copyright 2006, Dean Edwards
+	License: http://www.opensource.org/licenses/mit-license.php
+*/
+
+// array-like enumeration
+if (!Array.forEach) { // mozilla already supports this
+	Array.forEach = function(array, block, context) {
+		for (var i = 0; i < array.length; i++) {
+			block.call(context, array[i], i, array);
+		}
+	};
+}
+
+// generic enumeration
+Function.prototype.forEach = function(object, block, context) {
+	for (var key in object) {
+		if (typeof this.prototype[key] == "undefined") {
+			block.call(context, object[key], key, object);
+		}
+	}
+};
+
+// character enumeration
+String.forEach = function(string, block, context) {
+	Array.forEach(string.split(""), function(chr, index) {
+		block.call(context, chr, index, string);
+	});
+};
+
+// globally resolve forEach enumeration
+var forEach = function(object, block, context) {
+	if (object) {
+		var resolve = Object; // default
+		if (object instanceof Function) {
+			// functions have a "length" property
+			resolve = Function;
+		} else if (object.forEach instanceof Function) {
+			// the object implements a custom forEach method so use that
+			object.forEach(block, context);
+			return;
+		} else if (typeof object == "string") {
+			// the object is a string
+			resolve = String;
+		} else if (typeof object.length == "number") {
+			// the object is array-like
+			resolve = Array;
+		}
+		resolve.forEach(object, block, context);
+	}
+}
+
+// --> 
+</script></head>
+
+
+
+<body>
+<h1>One-to-n alignments</h1>
+<p></p><pre><b>Command:</b> compare-matrices  -v 1 -format1 transfac -file1 $RSAT/public_html/tmp/www-data/2019/07/04/compare-matrices_2019-07-04.155354_wocBcq/compare-matrices_query_matrices.transfac -file2 $RSAT/public_html/motif_databases/footprintDB/footprintDB.plants.motif.tf -format2 tf -strand DR -lth cor 0.7 -lth Ncor 0.4 -uth match_rank 50 -return cor,Ncor,logoDP,NsEucl,NSW,match_rank,matrix_id,matrix_name,width,strand,offset,consensus,alignments_1ton -o $RSAT/public_html/tmp/www-data/2019/07/04/compare-matrices_2019-07-04.155354_wocBcq/compare-matrices.tab
+</pre><p></p>
+<h2>One-to-n matrix alignment; reference matrix: dyads_test_vs_ctrl_m3_shift3	; 13 matrices	; sort_field=rank_mean</h2>
+<p><table class="sortable"><thead><tr><th>Matrix name</th><th>Aligned logos</th><th>cor</th>
+<th>Ncor</th>
+<th>logoDP</th>
+<th>NsEucl</th>
+<th>NSW</th>
+<th>rcor</th>
+<th>rNcor</th>
+<th>rlogoDP</th>
+<th>rNsEucl</th>
+<th>rNSW</th>
+<th>rank_mean</th>
+<th>match_rank</th>
+<th>Aligned matrices</th>
+</tr></thead>
+<tbody><tr>
+<td style="background-color: #FFFFFF;">dyads_test_vs_ctrl_m3_shift3 (dyads_test_vs_ctrl_m3)</td>
+<td style="background-color: #FFFFFF;"><a href="One-to-n%20alignments_dyads_up2_files/dyads_test_vs_ctrl_m3_shift3.png"><img src="One-to-n%20alignments_dyads_up2_files/dyads_test_vs_ctrl_m3_shift3.png" border="0"></a></td>
+<td style="background-color: #FFFFFF;border-right:none">&nbsp;</td>
+<td style="background-color: #FFFFFF;border-right:none">&nbsp;</td>
+<td style="background-color: #FFFFFF;border-right:none">&nbsp;</td>
+<td style="background-color: #FFFFFF;border-right:none">&nbsp;</td>
+<td style="background-color: #FFFFFF;border-right:none">&nbsp;</td>
+<td style="background-color: #FFFFFF;border-right:none">&nbsp;</td>
+<td style="background-color: #FFFFFF;border-right:none">&nbsp;</td>
+<td style="background-color: #FFFFFF;border-right:none">&nbsp;</td>
+<td style="background-color: #FFFFFF;border-right:none">&nbsp;</td>
+<td style="background-color: #FFFFFF;border-right:none">&nbsp;</td>
+<td style="background-color: #FFFFFF;border-right:none">&nbsp;</td>
+<td style="background-color: #FFFFFF;border-right:none">&nbsp;</td>
+<td style="background-color: #FFFFFF;"><pre>; dyads_test_vs_ctrl_m3; m=0 (reference); ncol1=17; shift=3; ncol=22; ---rvcacACGCGgTttcby--
+; Alignment reference
+a	0	0	0	28	26	13	61	12	84	4	8	6	6	4	4	13	14	12	16	23	0	0
+c	0	0	0	22	25	53	8	54	3	89	0	83	1	12	9	12	11	45	24	24	0	0
+g	0	0	0	25	24	13	13	16	6	1	85	2	81	65	5	14	12	23	25	20	0	0
+t	0	0	0	21	21	17	14	14	3	2	3	5	8	15	78	57	59	16	31	29	0	0
+</pre></td>
+</tr>
+<tr>
+<td style="background-color: #FFFFFF;">CAMTA1_MA1197.1_JASPAR_rc_shift5 (CAMTA1:MA1197.1:JASPAR_rc)</td>
+<td style="background-color: #FFFFFF;"><a href="One-to-n%20alignments_dyads_up2_files/CAMTA1_MA1197.png"><img src="One-to-n%20alignments_dyads_up2_files/CAMTA1_MA1197.png" border="0"></a></td>
+<td style="background-color: #FFFFFF;">0.900</td>
+<td style="background-color: #FFFFFF;">0.636</td>
+<td style="background-color: #FFFFFF;">4.721</td>
+<td style="background-color: #FFFFFF;">0.944</td>
+<td style="background-color: #FFFFFF;">0.963</td>
+<td style="background-color: #FFFFFF;">3</td>
+<td style="background-color: #FFFFFF;">2</td>
+<td style="background-color: #FFFFFF;">3</td>
+<td style="background-color: #FFFFFF;">1</td>
+<td style="background-color: #FFFFFF;">1</td>
+<td style="background-color: #FFFFFF;">2.000</td>
+<td style="background-color: #FFFFFF;">1</td>
+<td style="background-color: #FFFFFF;"><pre>; dyads_test_vs_ctrl_m3 versus CAMTA1_MA1197.1_JASPAR_rc (CAMTA1:MA1197.1:JASPAR_rc); m=1/12; ncol2=12; w=12; offset=2; strand=R; shift=5; score=      2; -----yhmACGCGytTt-----
+; cor=0.900; Ncor=0.636; logoDP=4.721; NsEucl=0.944; NSW=0.963; rcor=3; rNcor=2; rlogoDP=3; rNsEucl=1; rNSW=1; rank_mean=2.000; match_rank=1
+a	0	0	0	0	0	133	174	151	595	0	20	0	0	1	55	77	124	0	0	0	0	0
+c	0	0	0	0	0	170	156	326	3	598	0	598	0	285	132	45	117	0	0	0	0	0
+g	0	0	0	0	0	58	33	58	0	0	578	0	598	140	6	46	56	0	0	0	0	0
+t	0	0	0	0	0	237	235	63	0	0	0	0	0	172	405	430	301	0	0	0	0	0
+</pre></td>
+</tr>
+<tr>
+<td style="background-color: #FFFFFF;">CMTA2_MA0969.1_JASPAR_rc_shift8 (CMTA2:MA0969.1:JASPAR_rc)</td>
+<td style="background-color: #FFFFFF;"><a href="One-to-n%20alignments_dyads_up2_files/CMTA2_MA0969.png"><img src="One-to-n%20alignments_dyads_up2_files/CMTA2_MA0969.png" border="0"></a></td>
+<td style="background-color: #FFFFFF;">0.902</td>
+<td style="background-color: #FFFFFF;">0.478</td>
+<td style="background-color: #FFFFFF;">0.840</td>
+<td style="background-color: #FFFFFF;">0.935</td>
+<td style="background-color: #FFFFFF;">0.962</td>
+<td style="background-color: #FFFFFF;">2</td>
+<td style="background-color: #FFFFFF;">5</td>
+<td style="background-color: #FFFFFF;">7</td>
+<td style="background-color: #FFFFFF;">3</td>
+<td style="background-color: #FFFFFF;">3</td>
+<td style="background-color: #FFFFFF;">4.000</td>
+<td style="background-color: #FFFFFF;">3</td>
+<td style="background-color: #FFFFFF;"><pre>; dyads_test_vs_ctrl_m3 versus CMTA2_MA0969.1_JASPAR_rc (CMTA2:MA0969.1:JASPAR_rc); m=3/12; ncol2=9; w=9; offset=5; strand=R; shift=8; score=      4; --------ACRCGstww-----
+; cor=0.902; Ncor=0.478; logoDP=0.840; NsEucl=0.935; NSW=0.962; rcor=2; rNcor=5; rlogoDP=7; rNsEucl=3; rNSW=3; rank_mean=4.000; match_rank=3
+a	0	0	0	0	0	0	0	0	928	15	280	1	11	36	243	260	264	0	0	0	0	0
+c	0	0	0	0	0	0	0	0	54	970	7	970	8	306	243	176	220	0	0	0	0	0
+g	0	0	0	0	0	0	0	0	11	7	682	11	955	438	121	237	203	0	0	0	0	0
+t	0	0	0	0	0	0	0	0	7	8	31	18	26	220	393	327	313	0	0	0	0	0
+</pre></td>
+</tr>
+<tr>
+<td style="background-color: #FFFFFF;">FAR1_MA1382.1_JASPAR_shift3 (FAR1:MA1382.1:JASPAR)</td>
+<td style="background-color: #FFFFFF;"><a href="One-to-n%20alignments_dyads_up2_files/FAR1_MA1382.png"><img src="One-to-n%20alignments_dyads_up2_files/FAR1_MA1382.png" border="0"></a></td>
+<td style="background-color: #FFFFFF;">0.733</td>
+<td style="background-color: #FFFFFF;">0.647</td>
+<td style="background-color: #FFFFFF;">5.862</td>
+<td style="background-color: #FFFFFF;">0.923</td>
+<td style="background-color: #FFFFFF;">0.910</td>
+<td style="background-color: #FFFFFF;">8</td>
+<td style="background-color: #FFFFFF;">1</td>
+<td style="background-color: #FFFFFF;">1</td>
+<td style="background-color: #FFFFFF;">7</td>
+<td style="background-color: #FFFFFF;">9</td>
+<td style="background-color: #FFFFFF;">5.200</td>
+<td style="background-color: #FFFFFF;">4</td>
+<td style="background-color: #FFFFFF;"><pre>; dyads_test_vs_ctrl_m3 versus FAR1_MA1382.1_JASPAR (FAR1:MA1382.1:JASPAR); m=4/12; ncol2=15; w=15; offset=0; strand=D; shift=3; score=    5.2; ---ayyyCACGCGCytyy----
+; cor=0.733; Ncor=0.647; logoDP=5.862; NsEucl=0.923; NSW=0.910; rcor=8; rNcor=1; rlogoDP=1; rNsEucl=7; rNSW=9; rank_mean=5.200; match_rank=4
+a	0	0	0	234	122	73	126	8	591	0	0	0	0	0	27	112	145	135	0	0	0	0
+c	0	0	0	117	191	236	193	550	0	591	0	587	0	586	321	62	212	219	0	0	0	0
+g	0	0	0	98	97	58	13	17	0	0	591	0	590	0	50	147	82	66	0	0	0	0
+t	0	0	0	142	181	224	259	16	0	0	0	4	1	5	193	270	152	171	0	0	0	0
+</pre></td>
+</tr>
+<tr>
+<td style="background-color: #FFFFFF;">FHY3_MA0557.1_JASPAR_shift5 (FHY3:MA0557.1:JASPAR)</td>
+<td style="background-color: #FFFFFF;"><a href="One-to-n%20alignments_dyads_up2_files/FHY3_MA0557.png"><img src="One-to-n%20alignments_dyads_up2_files/FHY3_MA0557.png" border="0"></a></td>
+<td style="background-color: #FFFFFF;">0.797</td>
+<td style="background-color: #FFFFFF;">0.563</td>
+<td style="background-color: #FFFFFF;">4.846</td>
+<td style="background-color: #FFFFFF;">0.921</td>
+<td style="background-color: #FFFFFF;">0.925</td>
+<td style="background-color: #FFFFFF;">7</td>
+<td style="background-color: #FFFFFF;">3</td>
+<td style="background-color: #FFFFFF;">2</td>
+<td style="background-color: #FFFFFF;">8</td>
+<td style="background-color: #FFFFFF;">8</td>
+<td style="background-color: #FFFFFF;">5.600</td>
+<td style="background-color: #FFFFFF;">5</td>
+<td style="background-color: #FFFFFF;"><pre>; dyads_test_vs_ctrl_m3 versus FHY3_MA0557.1_JASPAR (FHY3:MA0557.1:JASPAR); m=5/12; ncol2=12; w=12; offset=2; strand=D; shift=5; score=    5.6; -----ywCACGCGCThw-----
+; cor=0.797; Ncor=0.563; logoDP=4.846; NsEucl=0.921; NSW=0.925; rcor=7; rNcor=3; rlogoDP=2; rNsEucl=8; rNSW=8; rank_mean=5.600; match_rank=5
+a	0	0	0	0	0	46	75	9	226	2	3	0	4	18	16	63	82	0	0	0	0	0
+c	0	0	0	0	0	81	58	210	3	230	16	220	0	208	40	68	44	0	0	0	0	0
+g	0	0	0	0	0	40	25	9	2	1	213	0	228	6	17	40	50	0	0	0	0	0
+t	0	0	0	0	0	68	77	7	4	2	3	15	3	3	162	64	59	0	0	0	0	0
+</pre></td>
+</tr>
+</tbody><tfoot></tfoot></table></p>
+</body></html>
