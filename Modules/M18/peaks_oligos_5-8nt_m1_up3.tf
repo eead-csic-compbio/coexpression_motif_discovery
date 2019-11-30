@@ -1,0 +1,146 @@
+AC  oligos_5-8nt_m1
+XX
+ID  oligos_5-8nt_m1
+XX
+DE  mkttGmCACGTGkcaamk
+P0       a     c     g     t
+1       28    29    16    24
+2       20    22    30    25
+3       14    17    20    46
+4       16    16    16    49
+5       11     3    67    16
+6       26    65     4     2
+7        3    85     5     4
+8       92     3     2     0
+9        5    85     2     5
+10       5     2    86     4
+11       0     2     3    92
+12       4     5    85     3
+13       2     4    66    25
+14      16    66     4    11
+15      49    16    16    16
+16      47    20    17    13
+17      25    31    21    20
+18      24    16    28    29
+XX
+BA  97 sequences
+XX
+BS  TGCTGCCACATGTCATTG; site_0; 1; 18; 0; p
+BS  CAATGACATGTGGCAGCA; site_1; 1; 18; 0; p
+BS  TCCCAACACGTGGCACCA; site_2; 1; 18; 0; p
+BS  TGGTGCCACGTGTTGGGA; site_3; 1; 18; 0; p
+BS  CTTTGCCGCGGGGTCAAG; site_4; 1; 18; 0; p
+BS  CTTGACCCCGCGGCAAAG; site_5; 1; 18; 0; p
+BS  ACCCGCCACGTGTAAAGT; site_6; 1; 18; 0; p
+BS  ACTTTACACGTGGCGGGT; site_7; 1; 18; 0; p
+BS  CCTTTACACGTGGCAAAA; site_8; 1; 18; 0; p
+BS  TTTTGCCACGTGTAAAGG; site_9; 1; 18; 0; p
+BS  CAGCGCCACTTGTCAAAA; site_10; 1; 18; 0; p
+BS  TTTTGACAAGTGGCGCTG; site_11; 1; 18; 0; p
+BS  AATTGCCACGTGTCAAAG; site_12; 1; 18; 0; p
+BS  CTTTGACACGTGGCAATT; site_13; 1; 18; 0; p
+BS  CATTGCCAAATGGCAGGT; site_14; 1; 18; 0; p
+BS  ACCTGCCATTTGGCAATG; site_15; 1; 18; 0; p
+BS  TTTGGCCACGTAGCTCTA; site_16; 1; 18; 0; p
+BS  TAGAGCTACGTGGCCAAA; site_17; 1; 18; 0; p
+BS  TCCTGCCACATGTCCACG; site_18; 1; 18; 0; p
+BS  CGTGGACATGTGGCAGGA; site_19; 1; 18; 0; p
+BS  AGCCTCCACGTGTCACCG; site_20; 1; 18; 0; p
+BS  CGGTGACACGTGGAGGCT; site_21; 1; 18; 0; p
+BS  GTCACCCACGTGTCACAC; site_22; 1; 18; 0; p
+BS  GTGTGACACGTGGGTGAC; site_23; 1; 18; 0; p
+BS  TTTCGCCACGTGGAATTG; site_24; 1; 18; 0; p
+BS  CAATTCCACGTGGCGAAA; site_25; 1; 18; 0; p
+BS  TGGAGCCACGTGTCACTG; site_26; 1; 18; 0; p
+BS  CAGTGACACGTGGCTCCA; site_27; 1; 18; 0; p
+BS  AGCTGCCACGTCCCAACA; site_28; 1; 18; 0; p
+BS  TGTTGGGACGTGGCAGCT; site_29; 1; 18; 0; p
+BS  CATTACAAGGTGGCAAGT; site_30; 1; 18; 0; p
+BS  ACTTGCCACCTTGTAATG; site_31; 1; 18; 0; p
+BS  AACTACCACGTGGCGCCA; site_32; 1; 18; 0; p
+BS  TGGCGCCACGTGGTAGTT; site_33; 1; 18; 0; p
+BS  TGCAGCCACGTGGAGAGT; site_34; 1; 18; 0; p
+BS  ACTCTCCACGTGGCTGCA; site_35; 1; 18; 0; p
+BS  ACTTACCACGCGGTTTAG; site_36; 1; 18; 0; p
+BS  CTAAACCGCGTGGTAAGT; site_37; 1; 18; 0; p
+BS  CTCCGGCACGTGTCACCG; site_38; 1; 18; 0; p
+BS  CGGTGACACGTGCCGGAG; site_39; 1; 18; 0; p
+BS  ACATGACACGTGGCTTGT; site_40; 1; 18; 0; p
+BS  ACAAGCCACGTGTCATGT; site_41; 1; 18; 0; p
+BS  TCCTGCCACGTGTCCTCT; site_42; 1; 18; 0; p
+BS  AGAGGACACGTGGCAGGA; site_43; 1; 18; 0; p
+BS  AACCTCGACGTGGCAACC; site_44; 1; 18; 0; p
+BS  GGTTGCCACGTCGAGGTT; site_45; 1; 18; 0; p
+BS  CTTTGGCACGTGGAGTCG; site_46; 1; 18; 0; p
+BS  CGACTCCACGTGCCAAAG; site_47; 1; 18; 0; p
+BS  TAATTCCACGTGGATATC; site_48; 1; 18; 0; p
+BS  GATATCCACGTGGAATTA; site_49; 1; 18; 0; p
+BS  CTTTGCCACGGTGGAAAC; site_50; 1; 18; 0; p
+BS  GTTTCCACCGTGGCAAAG; site_51; 1; 18; 0; p
+BS  TTTCACCACTTGGCAGGC; site_52; 1; 18; 0; p
+BS  GCCTGCCAAGTGGTGAAA; site_53; 1; 18; 0; p
+BS  AATTGTAACGTGGCGCAT; site_54; 1; 18; 0; p
+BS  ATGCGCCACGTTACAATT; site_55; 1; 18; 0; p
+BS  ACGTACCACGTGTACAGA; site_56; 1; 18; 0; p
+BS  TCTGTACACGTGGTACGT; site_57; 1; 18; 0; p
+BS  TGTGGCCACGTGGCTAAT; site_58; 1; 18; 0; p
+BS  ATTAGCCACGTGGCCACA; site_59; 1; 18; 0; p
+BS  TGTGGCCACGTGGCTAAT; site_60; 1; 18; 0; p
+BS  ATTAGCCACGTGGCCACA; site_61; 1; 18; 0; p
+BS  ATAAGACACGTGGCAACC; site_62; 1; 18; 0; p
+BS  GGTTGCCACGTGTCTTAT; site_63; 1; 18; 0; p
+BS  GAGTGCCATCTGGCTAAG; site_64; 1; 18; 0; p
+BS  CTTAGCCAGATGGCACTC; site_65; 1; 18; 0; p
+BS  AAGTCCCACGTGTCCCCG; site_66; 1; 18; 0; p
+BS  CGGGGACACGTGGGACTT; site_67; 1; 18; 0; p
+BS  TTCCACCACGTGGCATCC; site_68; 1; 18; 0; p
+BS  GGATGCCACGTGGTGGAA; site_69; 1; 18; 0; p
+BS  GATGGCTACGTGGCGACG; site_70; 1; 18; 0; p
+BS  CGTCGCCACGTAGCCATC; site_71; 1; 18; 0; p
+BS  CGTGGCGACGTGTAACCG; site_72; 1; 18; 0; p
+BS  CGGTTACACGTCGCCACG; site_73; 1; 18; 0; p
+BS  GATGGCTACGTGGCGACG; site_74; 1; 18; 0; p
+BS  CGTCGCCACGTAGCCATC; site_75; 1; 18; 0; p
+BS  CGTGGCGACGTGTAACCG; site_76; 1; 18; 0; p
+BS  CGGTTACACGTCGCCACG; site_77; 1; 18; 0; p
+BS  AGATTACACGTGGCTACC; site_78; 1; 18; 0; p
+BS  GGTAGCCACGTGTAATCT; site_79; 1; 18; 0; p
+BS  AAGTGCCACATGGACACC; site_80; 1; 18; 0; p
+BS  GGTGTCCATGTGGCACTT; site_81; 1; 18; 0; p
+BS  GGTGGACACGTGTCACGC; site_82; 1; 18; 0; p
+BS  GCGTGACACGTGTCCACC; site_83; 1; 18; 0; p
+BS  ATTAACCACGTGCCCAAT; site_84; 1; 18; 0; p
+BS  ATTGGGCACGTGGTTAAT; site_85; 1; 18; 0; p
+BS  TATTTACACGTGTCATGA; site_86; 1; 18; 0; p
+BS  TCATGACACGTGTAAATA; site_87; 1; 18; 0; p
+BS  AAACGACACGTGTCAGGA; site_88; 1; 18; 0; p
+BS  TCCTGACACGTGTCGTTT; site_89; 1; 18; 0; p
+BS  ATGTGCCAAGGGGCTAGT; site_90; 1; 18; 0; p
+BS  ACTAGCCCCTTGGCACAT; site_91; 1; 18; 0; p
+BS  CCATGACAAGTGGGAACT; site_92; 1; 18; 0; p
+BS  TCGAGCGACGTGGACGGC; site_93; 1; 18; 0; p
+BS  GCCGTCCACGTCGCTCGA; site_94; 1; 18; 0; p
+BS  CTTTGCCACGTAATTACG; site_95; 1; 18; 0; p
+BS  CGTAATTACGTGGCAAAG; site_96; 1; 18; 0; p
+CC  program: transfac
+CC  matrix.nb: 1
+CC  accession: oligos_5-8nt_m1
+CC  AC: oligos_5-8nt_m1
+CC  id: oligos_5-8nt_m1
+CC  name: oligos_5-8nt_m1
+CC  version: 
+CC  name: oligos_5-8nt_m1
+CC  description: mkttGmCACGTGkcaamk
+CC  statistical_basis: 97 sequences
+CC  transfac_consensus: 
+CC  matrix.nb: 1
+CC  sites: 97
+CC  bg_markov_order: 1
+CC  consensus.strict: cgttGCCACGTGGCaacg
+CC  consensus.strict.rc: CGTTGCCACGTGGCAACG
+CC  consensus.IUPAC: csktGCCACGTGGCavsg
+CC  consensus.IUPAC.rc: CSBTGCCACGTGGCAMSG
+CC  consensus.regexp: c[cg][gt]tGCCACGTGGCa[acg][cg]g
+CC  consensus.regexp.rc: C[CG][CGT]TGCCACGTGGCA[AC][CG]G
+XX
+//
