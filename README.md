@@ -1,8 +1,7 @@
 
-This repository contains data and documentation on how to discover cis-regulatory motifs proximal promoters
-of plants in [RSAT::Plants](http://rsat.eead.csic.es/plants). 
+This repository documents how to discover cis-regulatory motifs proximal promoters of plants in [RSAT::Plants](http://rsat.eead.csic.es/plants). 
 
-The data in [Modules/](./Modules/) correspond to the benchmark experiment with peach expression-based gene modules.
+The reports and data in [Modules/](./Modules/) correspond to the benchmark experiment with peach expression-based gene modules.
 
 URL: [eead-csic-compbio.github.io/coexpression_motif_discovery](https://eead-csic-compbio.github.io/coexpression_motif_discovery)
 
@@ -22,7 +21,7 @@ N Ksouri (1), JA Castro-Mondragón (2,3), F Montardit-Tardà (1), J van Helden 
 |:---------|:--------:|:---------|:--------:|
 |[upstream1](./upstream1.html) | [upstream2](./upstream2.html)| [upstream3](./upstream3.html) | [upstream4](./upstream4.html)| 
 
-**Summary**
+
 
 ![**Legend.** Summary](./home_image.jpg)
 
