@@ -15,6 +15,8 @@ N Ksouri (1), JA Castro-Mondragón (2,3), F Montardit-Tardà (1), J van Helden 
 4. Fundacion ARAID, Zaragoza, Spain
 5. European Bioinformatics Institute EMBL-EBI, Hinxton, UK
 
+Questions or comments, please contact: nksouri at eead.csic.es
+
 **Peach results**
 
 |-1.5Kb,+200b|-500b,+200b|-500b,0|0,+200b|
