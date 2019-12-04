@@ -1,5 +1,5 @@
 
-This repository documents how to discover cis-regulatory motifs proximal promoters of plants in [RSAT::Plants](http://rsat.eead.csic.es/plants). 
+This repository documents recipes to discover cis-regulatory motifs within proximal promoters of plants in [RSAT::Plants](http://rsat.eead.csic.es/plants). 
 
 The reports and data in [Modules/](./Modules/) correspond to the benchmark experiment with peach expression-based gene modules.
 
