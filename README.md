@@ -1,12 +1,8 @@
 
-This repository contains documentation and data of the research paper:
-
-Co-expression network drives prediction of cis elements in plants: the peach example
- 
-by Najla Ksouri, Jaime A. Castro-Mondragón, Francesc Montardit-Tardà, Jacques van Helden, Bruno Contreras-Moreira and Yolanda Gogorcena
-
 This repository contains data and documentation on how to discover cis-regulatory motifs proximal promoters
-of plants in [RSAT::Plants](http://rsat.eead.csic.es/plants).
+of plants in [RSAT::Plants](http://rsat.eead.csic.es/plants). 
+
+The data in folder [modules/](./modules/) correspond to the benchmark experiment with peach expression-based gene modules.
 
 URL: [eead-csic-compbio.github.io/coexpression_motif_discovery](https://eead-csic-compbio.github.io/coexpression_motif_discovery)
 
