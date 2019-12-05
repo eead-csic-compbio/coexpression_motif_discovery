@@ -21,9 +21,9 @@ Questions or comments, please contact: nksouri at eead.csic.es
 
 |-1.5Kb,+200b|-500b,+200b|-500b,0|0,+200b|
 |:---------|:--------:|:---------|:--------:|
-|[upstream1](./upstream1.html) | [upstream2](./upstream2.html)| [upstream3](./upstream3.html) | [upstream4](./upstream4.html)| 
+|[upstream1](./docs/upstream1.html) | [upstream2](./docs/upstream2.html)| [upstream3](./docs/upstream3.html) | [upstream4](./docs/upstream4.html)| 
 
 
 
-![**Legend.** Summary](./home_image.jpg)
+![**Legend.** Summary](./docs/home_image.jpg)
 
