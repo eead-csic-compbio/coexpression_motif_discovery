@@ -32,7 +32,8 @@ docker run --rm -v ~/rsat_data:/packages/rsat/public_html/data/ -v ~/rsat_result
 ```   
 “rsat_results” and “rsat_data” are two local directories in the host machine serving as a persistant storage volume inside the RSAT docker container.
   
-  
+    
+    
 **Findings**  
 This work was partly funded by the Spanish Ministry of Economy and Competitiveness grants AGL2014-52063R, AGL2017-83358-R (MCIU/AEI/FEDER/UE); and the Government of Aragón with grants A44 and A09_17R which were co-financed with FEDER funds. N. Ksouri was hired-project (AGL2014-52063R) and supported by PhD contract awarded by the Government of Aragón
 
