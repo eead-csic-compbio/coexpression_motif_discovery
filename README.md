@@ -19,11 +19,9 @@ Questions or comments, please contact: nksouri at eead.csic.es
 
 **Docker container**  
 
-A docker container with Regulatory Sequence Analysis Tools (RSAT) image is available [here](https://hub.docker.com/r/ksouri1/rsat_nksouri).
+A docker container with Regulatory Sequence Analysis Tools (RSAT) image is available [here](https://hub.docker.com/r/ksouri1/rsat_nksouri). If you have not set a docker engine on your machine, please see the instructions provided by the docker community for a simplified [installation](https://docs.docker.com/install/) procedure.
 
-If you have not set a docker engine on your machine, please see the instructions provided by the docker community for a simplified [installation](https://docs.docker.com/install/) procedure.
-
-Once docker is set up, you can get and run the RSAT docker image by typing the following lines in the terminal
+Once docker is set up, you can get and run the RSAT docker image by typing the following command lines in the terminal:
 ```
 # Get the docker image
 docker pull ksouri1/rsat_nksouri
@@ -32,6 +30,7 @@ docker pull ksouri1/rsat_nksouri
 docker run --rm -v ~/rsat_data:/packages/rsat/public_html/data/ -v ~/rsat_results:/home/rsat/rsat_results -it ksouri1/rsat_nksouri
 
 ```   
+“rsat_results” and “rsat_data” are two local directories in the host machine serving as a persistant storage volume inside the RSAT docker container.
   
   
 **Findings**  
