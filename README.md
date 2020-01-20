@@ -17,7 +17,8 @@ N Ksouri (1), JA Castro-Mondragón (2,3), F Montardit-Tardà (1), J van Helden 
 Questions or comments, please contact: nksouri at eead.csic.es
 
 
-**Docker container**
+**Docker container**  
+
 A docker container with Regulatory Sequence Analysis Tools (RSAT) image is available [here](https://hub.docker.com/r/ksouri1/rsat_nksouri).
 
 If you have not set a docker engine on your machine, please see the instructions provided by the docker community for a simplified [installation](https://docs.docker.com/install/) procedure.
@@ -30,7 +31,8 @@ docker pull ksouri1/rsat_nksouri
 # Run the docker container
 docker run --rm -v ~/rsat_data:/packages/rsat/public_html/data/ -v ~/rsat_results:/home/rsat/rsat_results -it ksouri1/rsat_nksouri
 
-```
+```  
+
 
 **Findings**
 
