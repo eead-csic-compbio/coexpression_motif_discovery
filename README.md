@@ -27,7 +27,7 @@ Once docker is set up, you can get and run the RSAT docker image by typing the f
 docker pull ksouri1/rsat_nksouri
 
 # Run the docker container
-docker run --rm -v ~/rsat_data:/packages/rsat/public_html/data/ -v ~/rsat_results:/home/rsat/rsat_results -it ksouri1/rsat_nksouri
+docker run --rm -v ~/rsat_data:/packages/rsat/public_html/data/ -v ~/rsat_results:/home/rsat_user/rsat_results -it ksouri1/rsat_nksouri
 
 ```   
 “rsat_results” and “rsat_data” are two local directories in the host machine serving as a persistant storage volume inside the RSAT docker container.
