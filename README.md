@@ -34,9 +34,8 @@ docker run --rm -v ~/rsat_data:/packages/rsat/public_html/data/ -v ~/rsat_result
   
     
     
-**Findings**  
-This work was partly funded by the Spanish Ministry of Economy and Competitiveness grants AGL2014-52063R, AGL2017-83358-R (MCIU/AEI/FEDER/UE); and the Government of Aragón with grants A44 and A09_17R, which were co-financed with FEDER funds. 
-N. Ksouri was hired by project AGL2014-52063R and now funded by a PhD fellowship awarded by the Government of Aragón.
+**Funding**  
+This work was partly funded by the Spanish Ministry of Economy and Competitiveness grants AGL2014-52063R, AGL2017-83358-R (MCIU/AEI/FEDER/UE); and the Government of Aragón with grants A44 and A09_17R, which were co-financed with FEDER funds. N Ksouri was hired by project AGL2014-52063R and now funded by a PhD fellowship awarded by the Government of Aragón.
 
 
 
