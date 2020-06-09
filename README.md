@@ -6,7 +6,7 @@ You can browse them at [eead-csic-compbio.github.io/coexpression_motif_discovery
 
 **Authors**
 
-N Ksouri (1), [JA Castro-Mondragón](https://orcid.org/0000-0003-4069-357X) (2,3), F Montardit-Tardà (1), [J van Helden](https://orcid.org/0000-0002-8799-8584) (2), [B Contreras-Moreira](http://orcid.org/0000-0002-5462-907X) (1,4,5), [Y Gogorcena](https://orcid.org/0000-0003-1081-430X) (1)
+[N Ksouri] (https://orcid.org/0000-0001-8956-2920)(1), [JA Castro-Mondragón](https://orcid.org/0000-0003-4069-357X) (2,3), F Montardit-Tardà (1), [J van Helden](https://orcid.org/0000-0002-8799-8584) (2), [B Contreras-Moreira](http://orcid.org/0000-0002-5462-907X) (1,4,5), [Y Gogorcena](https://orcid.org/0000-0003-1081-430X) (1)
 
 1. Estación Experimental de Aula Dei-CSIC, Zaragoza, Spain
 2. Aix-Marseille Univ, Theory and Approaches of Genome Complexity (TAGC), Marseille, France.
