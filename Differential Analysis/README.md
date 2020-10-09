@@ -107,14 +107,14 @@ biocLite("rhdf5")
 biocLite("devtools")
 biocLite("pachterlab/sleuth")
 
-#Uploading the required librairies
+#Upload the required librairies
 library("rhdf5")
 library("devtools")
 library("sleuth")
 library("biomaRt")
 library("plyr")
 
-# Defining the main directory
+# Define the main directory
 dir.main <- "~/kallisto_out/bakir-experiment"
 setwd(dir.main)
 
@@ -122,13 +122,13 @@ setwd(dir.main)
 sample_id <- list.files(dir.main, pattern = "kallisto_out")
 kallisto_dirs <- file.path(dir.main, sample_id)
 
-#load an auxillary table that describes the experimental design and the relationship between the kallisto directories and the samples:
+#Load an auxillary table that describes the experimental design and the relationship between the kallisto directories and the samples:
 s2c <- read.table(file.path(dir.main,"bhiseq_info.txt"),header = T, stringsAsFactors = F)
 s2c <- dplyr::select(s2c, sample = accession, condition)
 s2c <- dplyr::mutate(s2c, path = kallisto_dirs)
 print(s2c)
 
-# Describe the condition
+# Describe the different conditions
 control <- which(s2c$condition == "C_HYD")
 treat <- which(s2c$condition == "T_HYD")
 s2c_Lt_vs_Lc <- s2c[c(treat,control),]
@@ -136,15 +136,14 @@ s2c_Lt_vs_Lc <- s2c[c(treat,control),]
 # Construct the sleuth object (SO) where we will store not only the information about the experiment, but also details of the model to be used for differential  analysis and the results
 so <- sleuth_prep(s2c_Lt_vs_Lc, ~ condition, extra_bootstrap_summary = TRUE)
 
-# Performs the differential analysis adopting adopting the full  model and WT test
+# Perform the differential analysis adopting  the full model and WT test
 so <- sleuth_fit(so)
 so <-sleuth_wt(so, which_beta = "conditionT_HYD", which_model = "full")
 tests(so)
 result_table <- sleuth_results(so, "conditionT_HYD", test_type = "wt")
 result_ordred <- result_table[order(result_table$qval, decreasing = F),]
 
-# set qval <= 0.01 and (abs(b)> 1 as threshold to retain the differentially expressed transcripts 
-
+# set Qval <= 0.01 and (abs(b)> 1 as threshold to retain the differentially expressed transcripts 
 table(result_ordred$qval <= 0.01)
 sleuth_signficant <- dplyr::filter(result_table, qval <= 0.01 & (abs(b)> 1))
 
