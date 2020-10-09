@@ -79,7 +79,8 @@ kallisto_output
 
 
 
-The main quantification results are found in the **abundance.tsv** file, where abundances are reported in “estimated counts” (est_counts) and in Transcripts Per Million (TPM). The abundance.tsv file you get should look like this:
+The main quantification results are found in the **abundance.tsv** file, where abundances are reported in “estimated counts” (est_counts) and in Transcripts Per Million (TPM). The abundance.tsv file you get should look like this.  
+
 
 │target_id │ length │	eff_length│est_counts│	tpm    │
 | :--------| :-----:|:---------:|:--------:|:-------:|
