@@ -41,20 +41,20 @@ Kallisto was run in two steps:
 
 **1. Building the transcriptome index from all cDNA transcripts of Prunus persica v2, release 39 (Ensembl Plants)**:
 
-`
+```c
 cd kallisto  
 
 kallisto index -i prunus_persica.idx Prunus_persica.Prunus_persica_NCBIv2.cdna.all.fa
-`
+```
 
 **2. Quantification**
 
   - For paired-end reads:
   
-  <span style="color: #0865a6"> RESULTS_DIR=~/kallisto_output/ </span>   
-  
-  <span style="color: #0865a6">kallisto quant -i prunus_persica.idx -b 100 reads_1.fastq.gz reads_2.fastq.gz -o ${RESULTS_DIR}</span> 
-  
+  ````c
+  RESULTS_DIR=~/kallisto_output/
+  kallisto quant -i prunus_persica.idx -b 100 reads_1.fastq.gz reads_2.fastq.gz -o ${RESULTS_DIR}
+  ````
 
   - For single-end reads, add the --single parameter and supply the length (-l) and standard deviation of the fragment length (-s):
   
