@@ -65,10 +65,23 @@ add the *--single* </span>  parameter and supply the length *-l*  and standard d
   
   ````
 
-The results of kallisto are saved at the specified output directory **kallisto_output** and the contents of the directory should look like this:
-<ul> abundance.h5 </ul>
-<ul> abundance.tsv </ul>
-<ul> run_info.json </ul>
+The results of kallisto are saved at the specified output directory **kallisto_output** and should have this structure:
++-- _kallisto_output
+|   +-- abundance.h5
+|   +-- abundance.tsv
+|   +--run_info.json
+
 
 The main quantification results are found in the **abundance.tsv** file, where abundances are reported in “estimated counts” (est_counts) and in Transcripts Per Million (TPM). The abundance.tsv file you get should look like this:
+
+target_id	length	eff_length	est_counts	tpm
+ONH90035	2743	2599.58	82	16.7163
+ONH93890	767	624.308	23	19.5235
+ONH93493	2101	1957.58	11.7188	3.17244
+ONH93490	2020	1876.58	91.2579	25.7711
+ONH93492	1938	1794.58	116.709	34.4645
+ONH93497	1080	936.579	68.4663	38.7402
+ONH93495	1080	936.579	68.4663	38.7402
+ONH93496	1080	936.579	68.4663	38.7402
+
 
