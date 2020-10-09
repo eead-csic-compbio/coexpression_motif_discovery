@@ -1,5 +1,5 @@
 ## RNA-seq analysis  
-================================================================================
+------
 
 This repository is used to store the code for detailed RNA-seq analysis.
 
@@ -27,4 +27,4 @@ Eight peach RNA-sequencing datasets of various peach cultivars under different s
 
 ### Quality control
 Quality metrics of the raw sequences was assessed using FASTQC v.0.11.5 and Trimmomatic v.0.36.
-For more details about please refer to [FASTQC main page] (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+For more details about please refer to FASTQC main page and manual (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
