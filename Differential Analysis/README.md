@@ -9,7 +9,7 @@ This repository is used to store the code for detailed RNA-seq analysis.
 - [Normalization and differential analysis using Sleuth](#Normalization-and-differential-analysis-using-Sleuth)  
 
 
-
+***
 ### Raw data material
 Eight peach RNA-sequencing datasets of various peach cultivars under different stress conditions and from various tissues were used for this project. All the raw data files were downloaded from the European Nucleotide Archive (https://www.ebi.ac.uk/ena).
 
@@ -26,7 +26,7 @@ Eight peach RNA-sequencing datasets of various peach cultivars under different s
 | PRJNA397885    | Chilling injury    | Fruit       |paired-end      |
 
 
-
+***
 ### Quality control
 
 Quality metrics of the raw sequences was assessed using FastQC v.0.11.5 and Trimmomatic v.0.36.
@@ -34,7 +34,7 @@ For more details please refer to FastQC main page and manual (https://www.bioinf
 
 Briefly, low-quality sequences with mean Phred score (*Q* < 30) and adaptors were trimmmed. The first nucleotides were then head-cropped to ensure a per-position A, C, G, T frequency near to 0.25 and only sequences longer than 36 bp were retained for downstream analysis.  
   
-    
+***    
 ### Pseudo alignment and transcript quantification using Kallisto
 
 Once the high quality reads from each RNA-seq project were obtained, the pseudo-aligner kallisto v.0.43.1 was used for fast and accurate transcripts count and abundance.  
@@ -91,9 +91,34 @@ The main quantification results are found in the **abundance.tsv** file, where a
 | ONH93490 | Drought| 1876.58   |91.2579   | 25.7711|
 
 
+***
 ### Normalization and differential analysis using Sleuth
 
 Differential expression analysis was conducted with Sleuth R package v.0.29.0 for each RNA data set separately.
 
-The first Step towards Sleuth analysis is to specify the path to **kallisto results**
+The first Step towards Sleuth analysis is to install  Sleuth package and specify the path to **kallisto results**
+
+
+```r
+#Install packages
+source("https://bioconductor.org/biocLite.R")
+biocLite("biomaRt")
+biocLite("rhdf5")
+biocLite("devtools")
+biocLite("pachterlab/sleuth")
+
+#Uploading the required librairies
+library("rhdf5")
+library("devtools")
+library("sleuth")
+library("biomaRt")
+library("plyr")
+
+# Defining the directory
+dir.main <- "~/rna_seq_data/kallisto_out/Bakir"
+setwd(dir.main)
+
+```
+
+
 
