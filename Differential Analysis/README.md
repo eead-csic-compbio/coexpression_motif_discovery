@@ -9,6 +9,7 @@ This repository is used to store the code for detailed RNA-seq analysis.
 - [Normalization and differential analysis](#Normalization-and-differential-analysis)  
 
 
+
 ### Raw data material
 Eight peach RNA-sequencing datasets of various peach cultivars under different stress conditions and from various tissues were used for this project. All the raw data files were downloaded from the European Nucleotide Archive (https://www.ebi.ac.uk/ena).
 
@@ -25,6 +26,11 @@ Eight peach RNA-sequencing datasets of various peach cultivars under different s
 | PRJNA397885    | Chilling injury    | Fruit       |
 
 
+
 ### Quality control
-Quality metrics of the raw sequences was assessed using FASTQC v.0.11.5 and Trimmomatic v.0.36.
-For more details about please refer to FASTQC main page and manual (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+Quality metrics of the raw sequences was assessed using FastQC v.0.11.5 and Trimmomatic v.0.36.
+For more details please refer to FastQC main page and manual (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) and check the video tutorial here:http://www.youtube.com/watch?v=bz93ReOv87Y. 
+
+Briefly, low-quality sequences with mean Phred score (Q < 30) and adaptors were trimmmed. The first nucleotides were then head-cropped to ensure a per-position A, C, G, T frequency near to 0.25 and only sequences longer than 36 bp were retained for downstream analysis.
+
+
