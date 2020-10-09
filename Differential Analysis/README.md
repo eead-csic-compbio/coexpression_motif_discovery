@@ -66,31 +66,14 @@ add the *--single* </span>  parameter and supply the length *-l*  and standard d
   ````
 
 The results of kallisto are saved at the specified output directory **kallisto_output** and should have this structure:
+
+```
 +-- _kallisto_output
 |   +-- abundance.h5
 |   +-- abundance.tsv
 |   +--run_info.json
+```
 
-
-
-.
-+-- _config.yml
-+-- _drafts
-|   +-- begin-with-the-crazy-ideas.textile
-|   +-- on-simplicity-in-technology.markdown
-+-- _includes
-|   +-- footer.html
-|   +-- header.html
-+-- _layouts
-|   +-- default.html
-|   +-- post.html
-+-- _posts
-|   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   +-- 2009-04-26-barcamp-boston-4-roundup.textile
-+-- _data
-|   +-- members.yml
-+-- _site
-+-- index.html
 
 The main quantification results are found in the **abundance.tsv** file, where abundances are reported in “estimated counts” (est_counts) and in Transcripts Per Million (TPM). The abundance.tsv file you get should look like this:
 
