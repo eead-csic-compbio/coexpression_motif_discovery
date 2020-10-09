@@ -57,7 +57,7 @@ kallisto index -i prunus_persica.idx Prunus_persica.Prunus_persica_NCBIv2.cdna.a
   ````
 
   - For single-end reads:
-  add the <span style="color: red">--single </span>  parameter and supply the length <span style="color: red"> -l </span> and standard deviation of the fragment length <span style="color: red"> -s </span> :
+add the <span style="color: #0865a6"> --single </span>  parameter and supply the length <span style="color: red"> -l </span> and standard deviation of the fragment length <span style="color: red"> -s </span> :
   
   ````c
   RESULTS_DIR=~/kallisto_output/
