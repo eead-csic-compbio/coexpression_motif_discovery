@@ -14,16 +14,16 @@ This repository is used to store the code for detailed RNA-seq analysis.
 Eight peach RNA-sequencing datasets of various peach cultivars under different stress conditions and from various tissues were used for this project. All the raw data files were downloaded from the European Nucleotide Archive (https://www.ebi.ac.uk/ena).
 
 
-| Project IDs    | Experiments        | Tissues     |libraries type  |
-| :--------------| :-----------------:|:-----------:|:--------------:|
-| PRJNA271307    | Ripening stage     | Fruit       |single-end      |
-| PRJNA288567    | Cold storage       | Fruit       |paired-end      |
-| PRJNA248711    | Hyper hydricity    | Leaf        |paired-end      |
-| PRJEB12334     | Drought            | Root/Leaf   |paired-end      |
-| PRJNA252780    | Low T°             | Stigma      |single-end      |
-| PRJNA323761    | Drought            | Root        |paired-end      |
-| PRJNA328435    | Cold storage       | Fruit       |paired-end      |
-| PRJNA397885    | Chilling injury    | Fruit       |paired-end      |
+| Project IDs    | Experiments        | Tissues     |libraries type  |References             |
+| :--------------| :-----------------:|:-----------:|:--------------:|:---------------------:|
+| PRJNA271307    | Ripening stage     | Fruit       |single-end      |(Li et al., 2015)      |
+| PRJNA288567    | Cold storage       | Fruit       |paired-end      |(Sanhueza et al., 2015)|
+| PRJNA248711    | Hyper hydricity    | Leaf        |paired-end      |(Bakir et al., 2016)   |
+| PRJEB12334     | Drought            | Root/Leaf   |paired-end      |(Ksouri et al., 2016)  |
+| PRJNA252780    | Low T°             | Stigma      |single-end      |(Jiao et al., 2017)    |
+| PRJNA323761    | Drought            | Root        |paired-end      |Unpublished            |
+| PRJNA328435    | Cold storage       | Fruit       |paired-end      |Unpublished            |
+| PRJNA397885    | Chilling injury    | Fruit       |paired-end      |Unpublished            |
 
 
 ***
@@ -96,7 +96,7 @@ The main quantification results are found in the **abundance.tsv** file, where a
 
 Differential expression analysis was conducted with Sleuth R package v.0.29.0 for each RNA data set separately.
 
-The first Step towards Sleuth analysis is to install  Sleuth package and specify the path to **kallisto results**
+The first Step towards Sleuth analysis is to install  Sleuth package and specify the path to **kallisto results**. As each RNA-seq project was examined separetly herein we will take Bakir et al experiment as an example.
 
 
 ```r
@@ -114,9 +114,43 @@ library("sleuth")
 library("biomaRt")
 library("plyr")
 
-# Defining the directory
-dir.main <- "~/rna_seq_data/kallisto_out/Bakir"
+# Defining the main directory
+dir.main <- "~/kallisto_out/bakir-experiment"
 setwd(dir.main)
+
+# 1. Bakir experiment
+sample_id <- list.files(dir.main, pattern = "kallisto_out")
+kallisto_dirs <- file.path(dir.main, sample_id)
+
+#load an auxillary table that describes the experimental design and the relationship between the kallisto directories and the samples:
+s2c <- read.table(file.path(dir.main,"bhiseq_info.txt"),header = T, stringsAsFactors = F)
+s2c <- dplyr::select(s2c, sample = accession, condition)
+s2c <- dplyr::mutate(s2c, path = kallisto_dirs)
+print(s2c)
+
+# Describe the condition
+control <- which(s2c$condition == "C_HYD")
+treat <- which(s2c$condition == "T_HYD")
+s2c_Lt_vs_Lc <- s2c[c(treat,control),]
+
+# Construct the sleuth object (SO) where we will store not only the information about the experiment, but also details of the model to be used for differential  analysis and the results
+so <- sleuth_prep(s2c_Lt_vs_Lc, ~ condition, extra_bootstrap_summary = TRUE)
+
+# Performs the differential analysis adopting adopting the full  model and WT test
+so <- sleuth_fit(so)
+so <-sleuth_wt(so, which_beta = "conditionT_HYD", which_model = "full")
+tests(so)
+result_table <- sleuth_results(so, "conditionT_HYD", test_type = "wt")
+result_ordred <- result_table[order(result_table$qval, decreasing = F),]
+
+# set qval <= 0.01 and (abs(b)> 1 as threshold to retain the differentially expressed transcripts 
+
+table(result_ordred$qval <= 0.01)
+sleuth_signficant <- dplyr::filter(result_table, qval <= 0.01 & (abs(b)> 1))
+
+# Save the results
+write.table(sleuth_signficant[,1], "~/sleuth_out/wt/bakir.txt", sep = "\t", row.names = F)
+write.table(sleuth_signficant[,1:5], "~/sleuth_out/expression_data/bakir.txt", sep = "\t", row.names = F)
 
 ```
 
