@@ -14,16 +14,16 @@ This repository is used to store the code for detailed RNA-seq analysis.
 Eight peach RNA-sequencing datasets of various peach cultivars under different stress conditions and from various tissues were used for this project. All the raw data files were downloaded from the European Nucleotide Archive (https://www.ebi.ac.uk/ena).
 
 
-| Project IDs    | Experiments        | Tissues     |
-| :--------------| :-----------------:|:-----------:|
-| PRJNA271307    | Ripening stage     | Fruit       |
-| PRJNA288567    | Cold storage       | Fruit       |
-| PRJNA248711    | Hyper hydricity    | Leaf        |
-| PRJEB12334     | Drought            | Root/Leaf   |
-| PRJNA252780    | Low T°             | Stigma      |
-| PRJNA323761    | Drought            | Root        |
-| PRJNA328435    | Cold storage       | Fruit       |
-| PRJNA397885    | Chilling injury    | Fruit       |
+| Project IDs    | Experiments        | Tissues     |libraries type  |
+| :--------------| :-----------------:|:-----------:|:--------------:|
+| PRJNA271307    | Ripening stage     | Fruit       |single-end      |
+| PRJNA288567    | Cold storage       | Fruit       |paired-end      |
+| PRJNA248711    | Hyper hydricity    | Leaf        |paired-end      |
+| PRJEB12334     | Drought            | Root/Leaf   |paired-end      |
+| PRJNA252780    | Low T°             | Stigma      |single-end      |
+| PRJNA323761    | Drought            | Root        |paired-end      |
+| PRJNA328435    | Cold storage       | Fruit       |paired-end      |
+| PRJNA397885    | Chilling injury    | Fruit       |paired-end      |
 
 
 
@@ -41,7 +41,7 @@ Kallisto was run in two steps:
 
 **1. Building the transcriptome index from all cDNA transcripts of Prunus persica v2, release 39 (Ensembl Plants)**:
 
-```html
+```console
 cd kallisto  
 
 kallisto index -i prunus_persica.idx Prunus_persica.Prunus_persica_NCBIv2.cdna.all.fa
@@ -64,3 +64,8 @@ add the *--single* </span>  parameter and supply the length *-l*  and standard d
   kallisto quant -i prunus_persica.idx -b 100 --single -l 200 -s 20 reads_1.fastq.gz -o ${RESULTS_DIR}
   
   ````
+
+The results of kallisto are saved at the specified output directory **kallisto_output** and the contents of the directory should look like this:
+<ul> abundance.h5 </ul>
+ <ul> abundance.tsv </ul>
+  <ul> run_info.json </ul>
