@@ -52,8 +52,8 @@ kallisto index -i prunus_persica.idx Prunus_persica.Prunus_persica_NCBIv2.cdna.a
   - For paired-end reads:
   
   ````
-  RESULTS_DIR=~/kallisto_output/
-  kallisto quant -i prunus_persica.idx -b 100 reads_1.fastq.gz reads_2.fastq.gz -o ${RESULTS_DIR}
+  <span style="color: #0865a6"> RESULTS_DIR=~/kallisto_output/ </span> 
+  <span style="color: #0865a6">kallisto quant -i prunus_persica.idx -b 100 reads_1.fastq.gz reads_2.fastq.gz -o ${RESULTS_DIR}</span> 
   
   ````
   - For single-end reads, add the --single parameter and supply the length (-l) and standard deviation of the fragment length (-s):
