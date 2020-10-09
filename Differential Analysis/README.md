@@ -37,16 +37,29 @@ Briefly, low-quality sequences with mean Phred score (*Q* < 30) and adaptors wer
     
 ### Pseudo alignment using Kallisto    
 Once the high quality reads from each RNA-seq project were obtained, the pseudo-aligner kallisto v.0.43.1 was used for fast and accurate transcripts count and abundance.  
-Kallisto was run in two steps: 
+Kallisto was run in two steps:  
+
 **1. Building the transcriptome index from all cDNA transcripts of Prunus persica v2, release 39 (Ensembl Plants)**:
 
-```
+````
 cd kallisto 
 kallisto index -i prunus_persica.idx Prunus_persica.Prunus_persica_NCBIv2.cdna.all.fa
 
-```
+````
 
 **2. Quantification**
-  - For paired-end reads
-  - For single-end reads
 
+  - For paired-end reads:
+  
+  ````
+  RESULTS_DIR=~/kallisto_output/
+  kallisto quant -i prunus_persica.idx -b 100 reads_1.fastq.gz reads_2.fastq.gz -o ${RESULTS_DIR}
+  
+  ````
+  - For single-end reads:
+  
+  ````
+  RESULTS_DIR=~/kallisto_output/
+  kallisto quant -i prunus_persica.idx -b 100 --single -l 200 -s 20 reads_1.fastq.gz -o ${RESULTS_DIR}
+  
+  ````
