@@ -41,9 +41,12 @@ Kallisto was run in two steps:
 - **Building the transcriptome index from all cDNA transcripts of Prunus persica v2, release 39 (Ensembl Plants)**:
 
 ```
-<p font color='red'> cd kallisto </p>
-<p font color='red'> kallisto index -i prunus_persica.idx Prunus_persica.Prunus_persica_NCBIv2.cdna.all.fa </p>
+cd kallisto 
+kallisto index -i prunus_persica.idx Prunus_persica.Prunus_persica_NCBIv2.cdna.all.fa
 
 ```
+
 - **Quantification**
+ - Paired-end reads
+ - single-end reads
 
