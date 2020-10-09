@@ -5,8 +5,8 @@ This repository is used to store the code for detailed RNA-seq analysis.
 
 - [Raw data material](#Raw-data-material)
 - [Quality control](#Quality-control)
-- [Pseudo alignment using Kallisto](#Pseudoalignment-using-Kallisto)
-- [Normalization and differential analysis](#Normalization-and-differential-analysis)  
+- [Pseudo alignment and transcript quantification using Kallisto](#Pseudoalignment-and-transcript-quantification-using-Kallisto)
+- [Normalization and differential analysis using Sleuth](#Normalization-and-differential-analysis-using-Sleuth)  
 
 
 
@@ -35,7 +35,8 @@ For more details please refer to FastQC main page and manual (https://www.bioinf
 Briefly, low-quality sequences with mean Phred score (*Q* < 30) and adaptors were trimmmed. The first nucleotides were then head-cropped to ensure a per-position A, C, G, T frequency near to 0.25 and only sequences longer than 36 bp were retained for downstream analysis.  
   
     
-### Pseudo alignment using Kallisto    
+### Pseudo alignment and transcript quantification using Kallisto
+
 Once the high quality reads from each RNA-seq project were obtained, the pseudo-aligner kallisto v.0.43.1 was used for fast and accurate transcripts count and abundance.  
 Kallisto was run in two steps:  
 
@@ -84,10 +85,15 @@ The main quantification results are found in the **abundance.tsv** file, where a
 
 | target_id| length | eff_length|est_counts| tpm    |
 | :--------| :----- |:----------|:---------|:-------|
-| ONH90035 | 2743   | 2599.58   |82        |:16.7163|
-| ONH93890 | Cold st| 624.308   |23        |:19.5235|
-| ONH93493 | Hyper h| 1957.58   |11.7188   |:3.17244|
-| ONH93490 | Drought| 1876.58   |91.2579   |:25.7711|
+| ONH90035 | 2743   | 2599.58   |82        | 16.7163|
+| ONH93890 | Cold st| 624.308   |23        | 19.5235|
+| ONH93493 | Hyper h| 1957.58   |11.7188   | 13.1724|
+| ONH93490 | Drought| 1876.58   |91.2579   | 25.7711|
 
 
+### Normalization and differential analysis using Sleuth
+
+Differential expression analysis was conducted with Sleuth R package v.0.29.0 for each RNA data set separately.
+
+The first Step towards Sleuth analysis is to specify the path to **kallisto results**
 
