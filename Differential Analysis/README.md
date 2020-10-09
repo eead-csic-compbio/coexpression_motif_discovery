@@ -47,6 +47,6 @@ kallisto index -i prunus_persica.idx Prunus_persica.Prunus_persica_NCBIv2.cdna.a
 ```
 
 - **Quantification**
- - Paired-end reads
- - single-end reads
+  - For paired-end reads
+  - For single-end reads
 
