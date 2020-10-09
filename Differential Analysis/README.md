@@ -94,9 +94,11 @@ The main quantification results are found in the **abundance.tsv** file, where a
 ***
 ### Normalization and differential analysis using Sleuth
 
-Differential expression analysis was conducted with Sleuth R package v.0.29.0 for each RNA data set separately.
+Differential expression analysis and data normalization were conducted with Sleuth R package v.0.29.0. This analysis was consisted mainly of two steps:
 
-The first Step towards Sleuth analysis is to install  Sleuth package and specify the path to **kallisto results**. As each RNA-seq project was examined separetly herein we will take Bakir et al experiment as an example.
+- Normalizing each RNA-seq project separetly and retain the list of differential expressed transcripts (DETs).
+
+- Transcripts from all RNA-seq experiments were normalized together using Sleuth function and then merged into a single list with an assigned mean TPM value for each treatment
 
 
 ```r
@@ -118,8 +120,10 @@ library("plyr")
 dir.main <- "~/kallisto_out/bakir-experiment"
 setwd(dir.main)
 
+###################################### STEP 1: Individaul normalization (EXP. Bakir experiment) ##########################
 # 1. Bakir experiment
-sample_id <- list.files(dir.main, pattern = "kallisto_out")
+# Specify the path to **kallisto results**
+sample_id <- list.files(dir.main, pattern = "kallisto_out/")
 kallisto_dirs <- file.path(dir.main, sample_id)
 
 #Load an auxillary table that describes the experimental design and the relationship between the kallisto directories and the samples:
@@ -143,7 +147,8 @@ tests(so)
 result_table <- sleuth_results(so, "conditionT_HYD", test_type = "wt")
 result_ordred <- result_table[order(result_table$qval, decreasing = F),]
 
-# set Qval <= 0.01 and (abs(b)> 1 as threshold to retain the differentially expressed transcripts 
+# set Qval <= 0.01 and (|β| > 1 as threshold to retain the differentially expressed transcripts 
+# Note that β is an approximation to Log(Fold Change)
 table(result_ordred$qval <= 0.01)
 sleuth_signficant <- dplyr::filter(result_table, qval <= 0.01 & (abs(b)> 1))
 
@@ -151,6 +156,30 @@ sleuth_signficant <- dplyr::filter(result_table, qval <= 0.01 & (abs(b)> 1))
 write.table(sleuth_signficant[,1], "~/sleuth_out/wt/bakir.txt", sep = "\t", row.names = F)
 write.table(sleuth_signficant[,1:5], "~/sleuth_out/expression_data/bakir.txt", sep = "\t", row.names = F)
 
+
+###################################### STEP 2: All datasets normalization (EXP. Bakir experiment) ##########################
+
+
+dir.main <- ("~/exper_info")
+setwd(dir.main)
+## Get the list of samples ID
+samples_id <- list.files(path = dir.main, pattern = "kallisto_out")
+kallisto_dirs <- file.path(dir.main, samples_id)
+
+## Descibing the experimental design (defining the conditions and the replicates)
+s2c <- read.table("all_experiments_info.txt",header = T, stringsAsFactors = F)
+s2c <- dplyr::select(s2c, sample = accession, condition)
+s2c <- dplyr::mutate(s2c, path = kallisto_dirs)
+print(s2c)
+
+## Defining sleuth object (SO) that stores the kallisto results
+so <- sleuth_prep(s2c, ~condition, extra_bootstrap_summary = TRUE)
+
+## Merging all normalized tpm of all replicates in one single file (between )
+all_tpm <- as.data.frame(sleuth_to_matrix(so,"obs_norm","tpm")) # convert sleuth object to matrix with the condition names
+all_tpm <- cbind (target_id = rownames(all_tpm), all_tpm)
+rownames(all_tpm)<- NULL
+write.table(all_tpm, "~/exper_info/normalized_tpm.txt", sep = "\t", row.names = F)
 ```
 
 
