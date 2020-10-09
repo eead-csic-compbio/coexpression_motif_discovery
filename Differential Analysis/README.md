@@ -41,7 +41,7 @@ Kallisto was run in two steps:
 
 **1. Building the transcriptome index from all cDNA transcripts of Prunus persica v2, release 39 (Ensembl Plants)**:
 
-```plaintext
+```html
 cd kallisto  
 
 kallisto index -i prunus_persica.idx Prunus_persica.Prunus_persica_NCBIv2.cdna.all.fa
@@ -57,9 +57,9 @@ kallisto index -i prunus_persica.idx Prunus_persica.Prunus_persica_NCBIv2.cdna.a
   ````
 
   - For single-end reads:
-add the <span style="color: #0865a6"> --single </span>  parameter and supply the length <span style="color: red"> -l </span> and standard deviation of the fragment length <span style="color: red"> -s </span> :
+add the *--single* </span>  parameter and supply the length *-l*  and standard deviation of the fragment length *-s*:
   
-  ````c
+  ````html
   RESULTS_DIR=~/kallisto_output/
   kallisto quant -i prunus_persica.idx -b 100 --single -l 200 -s 20 reads_1.fastq.gz -o ${RESULTS_DIR}
   
