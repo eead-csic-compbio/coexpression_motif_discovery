@@ -14,7 +14,7 @@ This repository is used to store the code for detailed RNA-seq analysis.
 Eight peach RNA-sequencing datasets of various peach cultivars under different stress conditions and from various tissues were used for this project. All the raw data files were downloaded from the European Nucleotide Archive (https://www.ebi.ac.uk/ena).
 
 
-| Project IDs    | Experiments        | Tissues     |libraries type  |References             |
+| Project IDs    | Experiments        | Tissues     |Libraries type  |References             |
 | :--------------| :-----------------:|:-----------:|:--------------:|:---------------------:|
 | PRJNA271307    | Ripening stage     | Fruit       |single-end      |(Li et al., 2015)      |
 | PRJNA288567    | Cold storage       | Fruit       |paired-end      |(Sanhueza et al., 2015)|
@@ -86,9 +86,9 @@ The main quantification results are found in the **abundance.tsv** file, where a
 | target_id| length | eff_length|est_counts| tpm    |
 | :--------| :----- |:----------|:---------|:-------|
 | ONH90035 | 2743   | 2599.58   |82        | 16.7163|
-| ONH93890 | Cold st| 624.308   |23        | 19.5235|
-| ONH93493 | Hyper h| 1957.58   |11.7188   | 13.1724|
-| ONH93490 | Drought| 1876.58   |91.2579   | 25.7711|
+| ONH93890 | 1822   | 624.308   |23        | 19.5235|
+| ONH93493 | 3250   | 1957.58   |11.7188   | 13.1724|
+| ONH93490 | 2493   | 1876.58   |91.2579   | 25.7711|
 
 
 ***
