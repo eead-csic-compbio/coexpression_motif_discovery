@@ -1,6 +1,6 @@
 ## TFs annotation and prediction of their potential TFBS using FootprintDB
 
-To verify whether modules with predicted motifs might contain their potential binding TFs, gene-encoding TFs were annotated were individually examined for their potential DNA motifs using [footprintDB}(http://floresta.eead.csic.es/footprintdb/).
+To verify whether modules with predicted motifs might contain their potential binding TFs, gene-encoding TFs were annotated were individually examined for their potential DNA motifs using [footprintDB}(http://floresta.eead.csic.es/footprintdb/)
 The results were results were compared to those obtained with RSAT.
 For consistency, control subsets of 50 random TFs selected from outside each module were additionally assessed. 
 Motif-to-motif similarities between footprintDB and RSAT predicted matrices were computed using the Ncor score. 
