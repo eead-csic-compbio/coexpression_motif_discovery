@@ -9,7 +9,7 @@ Note this is an independent analysis, which does not use the clustered sequences
 
 ## Scripts
 To reproduce this analysis, 2 scripts are available
-1. randomTF_footDB.mk (https://github.com/eead-csic-compbio/coexpression_motif_discovery/blob/master/footprintdb_predictions/randomTF_footdb.mk) - Genearte 50 random TFs for modules M6, M7, M18, M21 and M41. These subsets of random TFs are retrieved from all TFs annotated in 
+1. [randomTF_footDB.mk] (https://github.com/eead-csic-compbio/coexpression_motif_discovery/blob/master/footprintdb_predictions/randomTF_footdb.mk) - Genearte 50 random TFs for modules M6, M7, M18, M21 and M41. These subsets of random TFs are retrieved from all TFs annotated in 
 (M1, M2, M3, M4, M5, M6, M7, M9, M10, M11, M18, M21, M24, M28, M41, M43 and M44). Subsequently, it assign a protein sequence for each TF.
 
 2.[footDBclient.pl](https://github.com/eead-csic-compbio/footprintDBclient/blob/main/footDBclient.pl) - is for users that wish to query footprintDB from the command-line through the Web Services interface.
