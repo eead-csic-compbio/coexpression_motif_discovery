@@ -6,9 +6,11 @@ You can browse them at [eead-csic-compbio.github.io/coexpression_motif_discovery
 
 The recipes can be executed on the command-line with on a Docker container, as explained in the [tutorial](https://eead-csic-compbio.github.io/coexpression_motif_discovery/peach/Tutorial.html), or using the RSAT Web interfaces, as explained in the [Web protocol](https://github.com/RSAT-doc/motif_discovery_clusters).
 
-**Authors**
+**Citation:** 
+[N Ksouri](https://orcid.org/0000-0001-8956-2920)(1), [JA Castro-Mondragón](https://orcid.org/0000-0003-4069-357X) (2,3), F Montardit-Tardà (1), [J van Helden](https://orcid.org/0000-0002-8799-8584) (2), [B Contreras-Moreira](http://orcid.org/0000-0002-5462-907X) (1,4,5), [Y Gogorcena](https://orcid.org/0000-0003-1081-430X) (1) (2021) Tuning promoter boundaries improves regulatory motif discovery in non-model plants: the peach example. Plant Physiology, https://doi.org/10.1093/plphys/kiaa091
 
-[N Ksouri](https://orcid.org/0000-0001-8956-2920)(1), [JA Castro-Mondragón](https://orcid.org/0000-0003-4069-357X) (2,3), F Montardit-Tardà (1), [J van Helden](https://orcid.org/0000-0002-8799-8584) (2), [B Contreras-Moreira](http://orcid.org/0000-0002-5462-907X) (1,4,5), [Y Gogorcena](https://orcid.org/0000-0003-1081-430X) (1)
+
+**Affiliations**
 
 1. Estación Experimental de Aula Dei-CSIC, Zaragoza, Spain
 2. Aix-Marseille Univ, Theory and Approaches of Genome Complexity (TAGC), Marseille, France.
