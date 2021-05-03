@@ -145,7 +145,7 @@ peakmotifs:
 	echo Replicate $$r; \
 	RNDMSK=random$${r}.rm.fna; \
 	peak-motifs -i ${UP4}/$${RNDMSK} -ctrl ${BGMSK4} -motif_db footDB transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP4}/random$$r.rm.fna.peaks-rm -title analysis_random$$r -origin end -disco \
-	${DISCO} -nmotifs 5 -minol 6 -maxol 8 -scan_markov 1 -noov -img_format png -task ${PM_TASKS}; \
+	${DISCO} -nmotifs 5 -minol 5 -maxol 8 -scan_markov 1 -noov -img_format png -task ${PM_TASKS}; \
 	rm -rf ${UP4}/random$$r.rm.fna.peaks-rm/data; \
 	done
 
