@@ -122,7 +122,7 @@ peakmotifs:
 	
 	@echo "Running peak-motifs for M11 within upstream3"
 	@peak-motifs -i ${INPUT3} -ctrl ${BGMSK3} -motif_db footDB transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP3}/regulon${REGULON}.rm.fna.peaks-rm -title analysis_M11 -origin end \
-	-disco ${DISCO} -nmotifs 5 -minol 6 -maxol 8 -scan_markov 1 -noov -img_format png -task ${PM_TASKS}
+	-disco ${DISCO} -nmotifs 5 -minol 5 -maxol 8 -scan_markov 1 -noov -img_format png -task ${PM_TASKS}
 	@rm -rf ${UP3}/regulon${REGULON}.rm.fna.peaks-rm/data
 	
 	
