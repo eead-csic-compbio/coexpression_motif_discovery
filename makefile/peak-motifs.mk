@@ -26,7 +26,7 @@ BGMSK3=${UP3}/${SPECIES}-up3.rm.fna
 BGMSK4=${UP4}/${SPECIES}-up4.rm.fna
 
 # Precise the number of random clusters
-RNDSAMPLES=2 
+RNDSAMPLES=50
 
 # Collect the different upstream sequences from module M11 and prunus persica genome.
 retrieve:
