@@ -6,6 +6,8 @@ You can browse them at [eead-csic-compbio.github.io/coexpression_motif_discovery
 
 The recipes can be executed on the command-line with on a Docker container, as explained in the [tutorial](https://eead-csic-compbio.github.io/coexpression_motif_discovery/peach/Tutorial.html), or using the RSAT Web interfaces, as explained in the [Web protocol](https://github.com/RSAT-doc/motif_discovery_clusters).
 
+![**Legend.** Summary](./peach/flowchart.jpg)
+
 **Citation:** 
 [N Ksouri](https://orcid.org/0000-0001-8956-2920)(1), [JA Castro-Mondragón](https://orcid.org/0000-0003-4069-357X) (2,3), F Montardit-Tardà (1), [J van Helden](https://orcid.org/0000-0002-8799-8584) (2), [B Contreras-Moreira](http://orcid.org/0000-0002-5462-907X) (1,4,5), [Y Gogorcena](https://orcid.org/0000-0003-1081-430X) (1) (2021) Tuning promoter boundaries improves regulatory motif discovery in non-model plants: the peach example. Plant Physiology, [https://doi.org/10.1093/plphys/kiaa091](https://doi.org/10.1093/plphys/kiaa091)
 
@@ -41,7 +43,5 @@ docker run --rm -v ~/rsat_data:/packages/rsat/public_html/data/ -v ~/rsat_result
 **Funding**  
 This work was partly funded by the Spanish Ministry of Economy and Competitiveness grants AGL2014-52063R, AGL2017-83358-R (MCIU/AEI/FEDER/UE); and the Government of Aragón with grants A44 and A09_17R, which were co-financed with FEDER funds. N Ksouri was hired by project AGL2014-52063R and now funded by a PhD fellowship awarded by the Government of Aragón and co-financed with ESF funds respectively.
 
-
-
-![**Legend.** Summary](./peach/flowchart.jpg)
+![](./logomicin.png)
 
