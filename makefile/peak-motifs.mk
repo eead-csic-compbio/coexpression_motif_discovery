@@ -95,7 +95,7 @@ peakmotifs:
 	@echo "Running peak-motifs for M11 within upstream1"
 	@peak-motifs -i ${INPUT1} -ctrl ${BGMSK1} -motif_db footprintDB-plants transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP1}/regulon${REGULON}.rm.fna.peaks-rm -title analysis_M11 -origin end \
 	-disco ${DISCO} -nmotifs 5 -minol 5 -maxol 8 -scan_markov 1 -noov -img_format png -task ${PM_TASKS}
-	@rm -rf ${UP1}/regulon${REGULON}.rm.fna.peaks-rm/data
+	#@rm -rf ${UP1}/regulon${REGULON}.rm.fna.peaks-rm/data
 	
 	@echo "Running peak-motifs for random clusters within upstream1"
 	for r in `seq 1 ${RNDSAMPLES}`; do \
