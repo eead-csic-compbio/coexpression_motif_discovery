@@ -93,7 +93,7 @@ PM_TASKS=purge,seqlen,composition,disco,merge_motifs,split_motifs,timelog,motifs
 # Run peak-motifs pipeline
 peakmotifs: 
 	@echo "Running peak-motifs for M11 within upstream1"
-	@peak-motifs -i ${INPUT1} -ctrl ${BGMSK1} -motif_db footDB transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP1}/regulon${REGULON}.rm.fna.peaks-rm -title analysis_M11 -origin end \
+	@peak-motifs -i ${INPUT1} -ctrl ${BGMSK1} -motif_db footprintDB-plants transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP1}/regulon${REGULON}.rm.fna.peaks-rm -title analysis_M11 -origin end \
 	-disco ${DISCO} -nmotifs 5 -minol 5 -maxol 8 -scan_markov 1 -noov -img_format png -task ${PM_TASKS}
 	@rm -rf ${UP1}/regulon${REGULON}.rm.fna.peaks-rm/data
 	
@@ -101,13 +101,13 @@ peakmotifs:
 	for r in `seq 1 ${RNDSAMPLES}`; do \
 	echo Replicate $$r; \
 	RNDMSK=random$${r}.rm.fna; \
-	peak-motifs -i ${UP1}/$${RNDMSK} -ctrl ${BGMSK1} -motif_db footDB transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP1}/random$$r.rm.fna.peaks-rm -title analysis_random$$r -origin end -disco \
+	peak-motifs -i ${UP1}/$${RNDMSK} -ctrl ${BGMSK1} -motif_db footprintDB-plants transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP1}/random$$r.rm.fna.peaks-rm -title analysis_random$$r -origin end -disco \
 	${DISCO} -nmotifs 5 -minol 5 -maxol 8 -scan_markov 1 -noov -img_format png -task ${PM_TASKS};\
 	rm -rf ${UP1}/random$$r.rm.fna.peaks-rm/data;\
 	done
 	
 	@echo "Running peak-motifs for M11 within upstream2"
-	@peak-motifs -i ${INPUT2} -ctrl ${BGMSK2} -motif_db footDB transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP2}/regulon${REGULON}.rm.fna.peaks-rm -title analysis_M11 -origin end \
+	@peak-motifs -i ${INPUT2} -ctrl ${BGMSK2} -motif_db footprintDB-plants transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP2}/regulon${REGULON}.rm.fna.peaks-rm -title analysis_M11 -origin end \
 	-disco ${DISCO} -nmotifs 5 -minol 5 -maxol 8 -scan_markov 1 -noov -img_format png -task ${PM_TASKS}
 	@rm -rf ${UP2}/regulon${REGULON}.rm.fna.peaks-rm/data
 	
@@ -115,13 +115,13 @@ peakmotifs:
 	for r in `seq 1 ${RNDSAMPLES}`; do \
 	echo Replicate $$r; \
 	RNDMSK=random$${r}.rm.fna; \
-	peak-motifs -i ${UP2}/$${RNDMSK} -ctrl ${BGMSK2} -motif_db footDB transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP2}/random$$r.rm.fna.peaks-rm -title analysis_random$$r -origin end -disco \
+	peak-motifs -i ${UP2}/$${RNDMSK} -ctrl ${BGMSK2} -motif_db footprintDB-plants transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP2}/random$$r.rm.fna.peaks-rm -title analysis_random$$r -origin end -disco \
 	${DISCO} -nmotifs 5 -minol 5 -maxol 8 -scan_markov 1 -noov -img_format png -task ${PM_TASKS};\
 	rm -rf ${UP2}/random$$r.rm.fna.peaks-rm/data;\
 	done
 	
 	@echo "Running peak-motifs for M11 within upstream3"
-	@peak-motifs -i ${INPUT3} -ctrl ${BGMSK3} -motif_db footDB transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP3}/regulon${REGULON}.rm.fna.peaks-rm -title analysis_M11 -origin end \
+	@peak-motifs -i ${INPUT3} -ctrl ${BGMSK3} -motif_db footprintDB-plants transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP3}/regulon${REGULON}.rm.fna.peaks-rm -title analysis_M11 -origin end \
 	-disco ${DISCO} -nmotifs 5 -minol 5 -maxol 8 -scan_markov 1 -noov -img_format png -task ${PM_TASKS}
 	@rm -rf ${UP3}/regulon${REGULON}.rm.fna.peaks-rm/data
 	
@@ -130,13 +130,13 @@ peakmotifs:
 	for r in `seq 1 ${RNDSAMPLES}`; do \
 	echo Replicate $$r; \
 	RNDMSK=random$${r}.rm.fna; \
-	peak-motifs -i ${UP3}/$${RNDMSK} -ctrl ${BGMSK3} -motif_db footDB transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP3}/random$$r.rm.fna.peaks-rm -title analysis_random$$r -origin end -disco \
+	peak-motifs -i ${UP3}/$${RNDMSK} -ctrl ${BGMSK3} -motif_db footprintDB-plants transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP3}/random$$r.rm.fna.peaks-rm -title analysis_random$$r -origin end -disco \
 	${DISCO} -nmotifs 5 -minol 5 -maxol 8 -scan_markov 1 -noov -img_format png -task ${PM_TASKS};\
 	rm -rf ${UP3}/random$$r.rm.fna.peaks-rm/data;\
 	done
 	
 	@echo "Running peak-motifs for M11 within upstream4"
-	@peak-motifs -i ${INPUT4} -ctrl ${BGMSK4} -motif_db footDB transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP4}/regulon${REGULON}.rm.fna.peaks-rm -title analysis_M11 -origin end \
+	@peak-motifs -i ${INPUT4} -ctrl ${BGMSK4} -motif_db footprintDB-plants transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP4}/regulon${REGULON}.rm.fna.peaks-rm -title analysis_M11 -origin end \
 	-disco ${DISCO} -nmotifs 5 -minol 5 -maxol 8 -scan_markov 1 -noov -img_format png -task ${PM_TASKS}
 	@rm -rf ${UP4}/regulon${REGULON}.rm.fna.peaks-rm/data
 	
@@ -144,7 +144,7 @@ peakmotifs:
 	for r in `seq 1 ${RNDSAMPLES}`; do \
 	echo Replicate $$r; \
 	RNDMSK=random$${r}.rm.fna; \
-	peak-motifs -i ${UP4}/$${RNDMSK} -ctrl ${BGMSK4} -motif_db footDB transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP4}/random$$r.rm.fna.peaks-rm -title analysis_random$$r -origin end -disco \
+	peak-motifs -i ${UP4}/$${RNDMSK} -ctrl ${BGMSK4} -motif_db footprintDB-plants transfac ${FOOTDBFILE} -prefix peaks -outdir ${UP4}/random$$r.rm.fna.peaks-rm -title analysis_random$$r -origin end -disco \
 	${DISCO} -nmotifs 5 -minol 5 -maxol 8 -scan_markov 1 -noov -img_format png -task ${PM_TASKS}; \
 	rm -rf ${UP4}/random$$r.rm.fna.peaks-rm/data; \
 	done
