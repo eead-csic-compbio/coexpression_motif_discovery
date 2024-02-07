@@ -23,18 +23,37 @@ The recipes can be executed on the command-line with on a Docker container, as e
 Questions or comments, please contact: nksouri at eead.csic.es
 
 
-**Docker container**  
+**Docker Biocontainer**  
 
-A docker container with Regulatory Sequence Analysis Tools (RSAT) image is available [here](https://hub.docker.com/r/ksouri1/rsat_nksouri). If you have not set a docker engine on your machine, please see the instructions provided by the docker community for a simplified [installation](https://docs.docker.com/install/) procedure.
+A docker biocontainer with Regulatory Sequence Analysis Tools (RSAT) image is available [here](https://hub.docker.com/r/biocontainers/rsat). If you have not set a docker engine on your machine, please see the instructions provided by the docker community for a simplified [installation](https://docs.docker.com/install/) procedure.
 
 Once docker is set up, you can get and run the RSAT docker image by typing the following command lines in the terminal:
 ```
-# Get the docker image
-docker pull ksouri1/rsat_nksouri
+# 1. Get the docker image (This will take 10GB of your filesystem)
+# from the Linux/WSL terminal
+$docker pull biocontainers/rsat:20230828_cv1
 
-# Run the docker container
-docker run --rm -v ~/rsat_data:/packages/rsat/public_html/data/ -v ~/rsat_results:/home/rsat_user/rsat_results -it ksouri1/rsat_nksouri
+# 2. Create local folders for input data and results named respectively rsat_data/ and rsat_results/
+# In addition, a subfolder (rsat_data/genomes) should be created too
 
+$mkdir -p $HOME/rsat_data/genomes rsat_results
+
+# 3. Launch Docker RSAT container
+$docker run --rm -v $HOME/rsat_data:/packages/rsat/public_html/data/ -v $HOME/rsat_results:/home/rsat_user/rsat_results -it biocontainers/rsat:20230828_cv1
+
+# you should see a warning that can be safely ignored: 
+# * Starting Apache httpd web server apache2
+# (13)Permission denied: AH00091: apache2: could not open error log file /var/log/apache2/error.log.
+# AH00015: Unable to open logs
+# Action 'start' failed.
+# The Apache error log may have more information
+
+# 4. Download organism from public RSAT server (in this case Prunus persica)
+$download-organism -v 2 -org Prunus_persica.Prunus_persica_NCBIv2.38 -server https://rsat.eead.csic.es/plants
+
+# 5. Test the container
+$cd rsat_results 
+$make -f ../test_data/peak-motifs.mk RNDSAMPLES=2 all
 ```   
 “rsat_results” and “rsat_data” are two local directories in the host machine serving as a persistant storage volume inside the RSAT docker container.
   
