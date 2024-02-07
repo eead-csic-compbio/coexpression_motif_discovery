@@ -56,6 +56,8 @@ $cd rsat_results
 $make -f ../test_data/peak-motifs.mk RNDSAMPLES=2 all
 ```   
 “rsat_results” and “rsat_data” are two local directories in the host machine serving as a persistant storage volume inside the RSAT docker container.
+
+- The dockerfile used to create this Biocontainer is available [here](https://github.com/rsa-tools/rsat-code/blob/master/docker/Dockerfile)
   
     
     
