@@ -37,7 +37,7 @@ $docker pull biocontainers/rsat:20230828_cv1
 # In addition, a subfolder (rsat_data/genomes) should be created too
 
 $mkdir -p $HOME/rsat_data/genomes rsat_results
-$chmod -R a+w rsat_data/genomes rsat_results
+$chmod -R a+w rsat_data rsat_results
 
 # 3. Launch Docker RSAT container
 $docker run --rm -v $HOME/rsat_data:/packages/rsat/public_html/data/ -v $HOME/rsat_results:/home/rsat_user/rsat_results -it biocontainers/rsat:20230828_cv1
