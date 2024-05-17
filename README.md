@@ -40,7 +40,7 @@ $mkdir -p $HOME/rsat_data/genomes rsat_results
 $chmod -R a+w rsat_data rsat_results
 
 # 3. Launch Docker RSAT container
-$docker run --rm -v $HOME/rsat_data:/packages/rsat/public_html/data/ -v $HOME/rsat_results:/home/rsat_user/rsat_results -it biocontainers/rsat:20230828_cv1
+$docker run --rm -v $HOME/rsat_data:/packages/rsat/public_html/data/ -v $HOME/rsat_results:/home/rsat_user/rsat_results -it biocontainers/rsat:20240507_cv1
 
 # you should see a warning that can be safely ignored: 
 # * Starting Apache httpd web server apache2
@@ -59,7 +59,6 @@ $make -f ../test_data/peak-motifs.mk RNDSAMPLES=2 all
 “rsat_results” and “rsat_data” are two local directories in the host machine serving as a persistant storage volume inside the RSAT docker container.
 
 - The dockerfile used to create this Biocontainer is available [here](https://github.com/rsa-tools/rsat-code/blob/master/docker/Dockerfile)
-  
     
     
 **Funding**  
