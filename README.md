@@ -31,7 +31,7 @@ Once docker is set up, you can get and run the RSAT docker image by typing the f
 ```
 # 1. Get the docker image (This will take 10GB of your filesystem)
 # from the Linux/WSL terminal
-$docker pull biocontainers/rsat:20230828_cv1
+$docker pull biocontainers/rsat:20240507_cv1
 
 # 2. Create local folders for input data and results named respectively rsat_data/ and rsat_results/
 # In addition, a subfolder (rsat_data/genomes) should be created too
