@@ -8,7 +8,7 @@ UP3=~/rsat_results/upstream3
 UP4=~/rsat_results/upstream4
 
 # Define the species of interest and the four upstream boundaries
-SPECIES=Prunus_persica.Prunus_persica_NCBIv2.38
+SPECIES=Prunus_persica.Prunus_persica_NCBIv2.60
 REGULON=M11
 FROM1=-1500
 TO1=+200
