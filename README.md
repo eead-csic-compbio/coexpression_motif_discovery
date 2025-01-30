@@ -50,7 +50,7 @@ $docker run --rm -v $HOME/rsat_data:/packages/rsat/public_html/data/ -v $HOME/rs
 # The Apache error log may have more information
 
 # 4. Download organism from public RSAT server (in this case Prunus persica)
-$download-organism -v 2 -org Prunus_persica.Prunus_persica_NCBIv2.38 -server https://rsat.eead.csic.es/plants
+$download-organism -v 2 -org Prunus_persica.Prunus_persica_NCBIv2.60 -server https://rsat.eead.csic.es/plants
 
 # 5. Test the container
 $cd rsat_results 
