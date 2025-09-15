@@ -44,6 +44,6 @@ tflist:
 footprintdb:
 	@echo "Run the footDBclient.pl for each module"
 	@for m in ${Modules}; do \
-	perl footDBclient.pl -p randomTF_M1.fasta > results_footdb_M1.txt;\
+	footprintdb-rest -seq randomTF_M1.fasta > results_footdb_M1.txt;\
 	done
 		
