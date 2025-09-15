@@ -8,11 +8,10 @@ Note this is an independent analysis, which does not use the clustered sequences
 
 
 ## Scripts
-To reproduce this analysis, 2 scripts are available
-1. [randomTF_footDB.mk](https://github.com/eead-csic-compbio/coexpression_motif_discovery/blob/master/footprintdb_predictions/randomTF_footdb.mk) - Genearte 50 random TFs for modules M6, M7, M18, M21 and M41. These subsets of random TFs are retrieved from all TFs annotated in 
-(M1, M2, M3, M4, M5, M6, M7, M9, M10, M11, M18, M21, M24, M28, M41, M43 and M44). Subsequently, it assigns a protein sequence for each TF.
+To reproduce this analysis 2 scripts are needed
+1. [randomTF_footDB.mk](https://github.com/eead-csic-compbio/coexpression_motif_discovery/blob/master/footprintdb_predictions/randomTF_footdb.mk) - Generate 50 random TFs for modules M6, M7, M18, M21 and M41. These subsets of random TFs are retrieved from all TFs annotated in (M1, M2, M3, M4, M5, M6, M7, M9, M10, M11, M18, M21, M24, M28, M41, M43 and M44). Subsequently, it assigns a protein sequence for each TF. Requires MEME tools `fasta-make-index` and `fasta-fetch`.
 
-2. The footprintDB [REST api](https://github.com/eead-csic-compbio/footprintDBclient) - for users that wish to query footprintDB from the command-line.
+2. [footprintdb-rest](https://github.com/rsa-tools/rsat-code/blob/master/perl-scripts/footprintdb-rest) - queries the footprintDB [REST api](https://github.com/eead-csic-compbio/footprintDBclient) to predict PWMs for input transcription factor sequences from the command-line.
 
 
 ## Results
